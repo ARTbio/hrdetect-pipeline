@@ -1,0 +1,7 @@
+patient	sample	signature	value
+patient12	sample1	HRD score	9
+patient12	sample1	Signature 3	296.79731072890525
+patient12	sample1	Signature 8	94.25279560027425
+patient12	sample1	Rearrangement Signature 3	23.470897081719155
+patient12	sample1	Rearrangement Signature 5	65.84364360112781
+patient12	sample1	Deletion Microhomology Proportion	0.35192069392812886

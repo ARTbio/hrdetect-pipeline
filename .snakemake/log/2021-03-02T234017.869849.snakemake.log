@@ -1,0 +1,42 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	46	combine_scores
+	29	example_indels
+	46	example_segments
+	46	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	46	indel_annotation
+	46	microhomology_calculation
+	24	mutation_catalogs
+	46	snv_signatures_signit_exposures
+	46	snv_signatures_signit_summary
+	46	sv_catalogs
+	46	sv_signatures_signit_exposures
+	46	sv_signatures_signit_summary
+	517
+
+rule mutation_catalogs:
+    input: data/example/patients/patient14/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 517
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient14/sample1/somatic_snvs.vcf -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Error in rule mutation_catalogs:
+    jobid: 517
+    output: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+
+RuleException:
+CalledProcessError in line 90 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient14/sample1/somatic_snvs.vcf -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv --ref hg19 ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 90, in __rule_mutation_catalogs
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-03-02T234017.869849.snakemake.log

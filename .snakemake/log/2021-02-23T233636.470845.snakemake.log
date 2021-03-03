@@ -1,0 +1,6 @@
+Building DAG of jobs...
+InputFunctionException in line 230 of /home/chris/hrdetect-pipeline/Snakefile:
+IndexError: positional indexers are out-of-bounds
+Wildcards:
+project=example
+cohort=all

@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	1	combine_scores
+	1	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	6
+
+rule hrd_scores:
+    input: data/example/patients/patient2/sample1/segments.tsv
+    output: output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv
+    jobid: 8
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient2/sample1/segments.tsv -o output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv --genome hg38 --hrdtools=git/hrdtools
+Error in rule hrd_scores:
+    jobid: 8
+    output: output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv
+
+RuleException:
+CalledProcessError in line 204 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient2/sample1/segments.tsv -o output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv --genome hg38 --hrdtools=git/hrdtools ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 204, in __rule_hrd_scores
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-02-26T155111.374720.snakemake.log

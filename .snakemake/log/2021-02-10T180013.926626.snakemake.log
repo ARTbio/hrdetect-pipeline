@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	3	combine_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	3	snv_signatures_signit_summary
+	1	sv_signatures_signit_summary
+	11
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 14
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Error in rule snv_signatures_signit_summary:
+    jobid: 14
+    output: output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+
+RuleException:
+CalledProcessError in line 108 of /mnt/data/bind_homes/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT ' returned non-zero exit status 1.
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/Snakefile", line 108, in __rule_snv_signatures_signit_summary
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-02-10T180013.926626.snakemake.log

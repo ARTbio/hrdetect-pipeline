@@ -1,0 +1,954 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	46	combine_scores
+	7	example_indels
+	46	example_segments
+	1	example_snvs
+	1	example_sv
+	46	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	46	indel_annotation
+	46	microhomology_calculation
+	3	mutation_catalogs
+	46	snv_signatures_signit_exposures
+	46	snv_signatures_signit_summary
+	46	sv_catalogs
+	46	sv_signatures_signit_exposures
+	46	sv_signatures_signit_summary
+	476
+
+rule example_snvs:
+    input: examples/example/patient12/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient12/sample1/somatic_snvs.vcf
+    jobid: 619
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_snvs.vcf data/example/patients/patient12/sample1/somatic_snvs.vcf
+Finished job 619.
+1 of 476 steps (0.21%) done
+
+rule example_sv:
+    input: examples/example/patient12/sample1/somatic_sv.tsv
+    output: data/example/patients/patient12/sample1/somatic_sv.tsv
+    jobid: 618
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_sv.tsv data/example/patients/patient12/sample1/somatic_sv.tsv
+Finished job 618.
+2 of 476 steps (0.42%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient12/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 512
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient12/sample1/somatic_snvs.vcf -c output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 512.
+3 of 476 steps (0.63%) done
+
+rule example_indels:
+    input: examples/example/patient12/sample1/somatic_indels.vcf
+    output: data/example/patients/patient12/sample1/somatic_indels.vcf
+    jobid: 513
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_indels.vcf data/example/patients/patient12/sample1/somatic_indels.vcf
+Finished job 513.
+4 of 476 steps (0.84%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient6/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient6/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 438
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient6/sample1/somatic_snvs.vcf -c output/example/patients/patient6/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 438.
+5 of 476 steps (1%) done
+
+rule example_indels:
+    input: examples/example/patient4/sample1/somatic_indels.vcf
+    output: data/example/patients/patient4/sample1/somatic_indels.vcf
+    jobid: 515
+    wildcards: patient=patient4, sample=sample1
+
+cp -f examples/example/patient4/sample1/somatic_indels.vcf data/example/patients/patient4/sample1/somatic_indels.vcf
+Finished job 515.
+6 of 476 steps (1%) done
+
+rule example_indels:
+    input: examples/example/patient5/sample1/somatic_indels.vcf
+    output: data/example/patients/patient5/sample1/somatic_indels.vcf
+    jobid: 424
+    wildcards: patient=patient5, sample=sample1
+
+cp -f examples/example/patient5/sample1/somatic_indels.vcf data/example/patients/patient5/sample1/somatic_indels.vcf
+Finished job 424.
+7 of 476 steps (1%) done
+
+rule example_indels:
+    input: examples/example/patient6/sample1/somatic_indels.vcf
+    output: data/example/patients/patient6/sample1/somatic_indels.vcf
+    jobid: 436
+    wildcards: patient=patient6, sample=sample1
+
+cp -f examples/example/patient6/sample1/somatic_indels.vcf data/example/patients/patient6/sample1/somatic_indels.vcf
+Finished job 436.
+8 of 476 steps (2%) done
+
+rule example_indels:
+    input: examples/example/patient3/sample1/somatic_indels.vcf
+    output: data/example/patients/patient3/sample1/somatic_indels.vcf
+    jobid: 509
+    wildcards: patient=patient3, sample=sample1
+
+cp -f examples/example/patient3/sample1/somatic_indels.vcf data/example/patients/patient3/sample1/somatic_indels.vcf
+Finished job 509.
+9 of 476 steps (2%) done
+
+rule example_indels:
+    input: examples/example/patient1/sample1/somatic_indels.vcf
+    output: data/example/patients/patient1/sample1/somatic_indels.vcf
+    jobid: 465
+    wildcards: patient=patient1, sample=sample1
+
+cp -f examples/example/patient1/sample1/somatic_indels.vcf data/example/patients/patient1/sample1/somatic_indels.vcf
+Finished job 465.
+10 of 476 steps (2%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient16/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient16/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 487
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient16/sample1/somatic_snvs.vcf -c output/example/patients/patient16/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 487.
+11 of 476 steps (2%) done
+
+rule example_indels:
+    input: examples/example/patient16/sample1/somatic_indels.vcf
+    output: data/example/patients/patient16/sample1/somatic_indels.vcf
+    jobid: 489
+    wildcards: patient=patient16, sample=sample1
+
+cp -f examples/example/patient16/sample1/somatic_indels.vcf data/example/patients/patient16/sample1/somatic_indels.vcf
+Finished job 489.
+12 of 476 steps (3%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient6/sample1/somatic_sv.tsv
+    output: output/example/patients/patient6/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 437
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient6/sample1/somatic_sv.tsv -o output/example/patients/patient6/sample1/sv_signatures/sv_catalog.tsv
+Finished job 437.
+13 of 476 steps (3%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient4/sample1/somatic_sv.tsv
+    output: output/example/patients/patient4/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 514
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient4/sample1/somatic_sv.tsv -o output/example/patients/patient4/sample1/sv_signatures/sv_catalog.tsv
+Finished job 514.
+14 of 476 steps (3%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient3/sample1/somatic_sv.tsv
+    output: output/example/patients/patient3/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 510
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient3/sample1/somatic_sv.tsv -o output/example/patients/patient3/sample1/sv_signatures/sv_catalog.tsv
+Finished job 510.
+15 of 476 steps (3%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient13/sample1/somatic_sv.tsv
+    output: output/example/patients/patient13/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 470
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient13/sample1/somatic_sv.tsv -o output/example/patients/patient13/sample1/sv_signatures/sv_catalog.tsv
+Finished job 470.
+16 of 476 steps (3%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient7/sample1/somatic_sv.tsv
+    output: output/example/patients/patient7/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 548
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient7/sample1/somatic_sv.tsv -o output/example/patients/patient7/sample1/sv_signatures/sv_catalog.tsv
+Finished job 548.
+17 of 476 steps (4%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient9/sample1/somatic_sv.tsv
+    output: output/example/patients/patient9/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 498
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient9/sample1/somatic_sv.tsv -o output/example/patients/patient9/sample1/sv_signatures/sv_catalog.tsv
+Finished job 498.
+18 of 476 steps (4%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient2/sample1/somatic_sv.tsv
+    output: output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 480
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient2/sample1/somatic_sv.tsv -o output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+Finished job 480.
+19 of 476 steps (4%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient16/sample1/somatic_sv.tsv
+    output: output/example/patients/patient16/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 488
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient16/sample1/somatic_sv.tsv -o output/example/patients/patient16/sample1/sv_signatures/sv_catalog.tsv
+Finished job 488.
+20 of 476 steps (4%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient8/sample1/somatic_sv.tsv
+    output: output/example/patients/patient8/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 476
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient8/sample1/somatic_sv.tsv -o output/example/patients/patient8/sample1/sv_signatures/sv_catalog.tsv
+Finished job 476.
+21 of 476 steps (4%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient10/sample1/somatic_sv.tsv
+    output: output/example/patients/patient10/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 525
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient10/sample1/somatic_sv.tsv -o output/example/patients/patient10/sample1/sv_signatures/sv_catalog.tsv
+Finished job 525.
+22 of 476 steps (5%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient15/sample1/somatic_sv.tsv
+    output: output/example/patients/patient15/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 428
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient15/sample1/somatic_sv.tsv -o output/example/patients/patient15/sample1/sv_signatures/sv_catalog.tsv
+Finished job 428.
+23 of 476 steps (5%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient5/sample1/somatic_sv.tsv
+    output: output/example/patients/patient5/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 425
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient5/sample1/somatic_sv.tsv -o output/example/patients/patient5/sample1/sv_signatures/sv_catalog.tsv
+Finished job 425.
+24 of 476 steps (5%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient12/sample1/somatic_sv.tsv
+    output: output/example/patients/patient12/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 511
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient12/sample1/somatic_sv.tsv -o output/example/patients/patient12/sample1/sv_signatures/sv_catalog.tsv
+Finished job 511.
+25 of 476 steps (5%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient11/sample1/somatic_sv.tsv
+    output: output/example/patients/patient11/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 431
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient11/sample1/somatic_sv.tsv -o output/example/patients/patient11/sample1/sv_signatures/sv_catalog.tsv
+Finished job 431.
+26 of 476 steps (5%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient14/sample1/somatic_sv.tsv
+    output: output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 451
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient14/sample1/somatic_sv.tsv -o output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+Finished job 451.
+27 of 476 steps (6%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient1/sample1/somatic_sv.tsv
+    output: output/example/patients/patient1/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 463
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient1/sample1/somatic_sv.tsv -o output/example/patients/patient1/sample1/sv_signatures/sv_catalog.tsv
+Finished job 463.
+28 of 476 steps (6%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient27/sample1/somatic_sv.tsv
+    output: output/example/patients/patient27/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 420
+    wildcards: project=example, patient=patient27, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient27/sample1/somatic_sv.tsv -o output/example/patients/patient27/sample1/sv_signatures/sv_catalog.tsv
+Finished job 420.
+29 of 476 steps (6%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient33/sample1/somatic_sv.tsv
+    output: output/example/patients/patient33/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 539
+    wildcards: project=example, patient=patient33, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient33/sample1/somatic_sv.tsv -o output/example/patients/patient33/sample1/sv_signatures/sv_catalog.tsv
+Finished job 539.
+30 of 476 steps (6%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient17/sample1/somatic_sv.tsv
+    output: output/example/patients/patient17/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 518
+    wildcards: project=example, patient=patient17, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient17/sample1/somatic_sv.tsv -o output/example/patients/patient17/sample1/sv_signatures/sv_catalog.tsv
+Finished job 518.
+31 of 476 steps (7%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient18/sample1/somatic_sv.tsv
+    output: output/example/patients/patient18/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 543
+    wildcards: project=example, patient=patient18, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient18/sample1/somatic_sv.tsv -o output/example/patients/patient18/sample1/sv_signatures/sv_catalog.tsv
+Finished job 543.
+32 of 476 steps (7%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient41/sample1/somatic_sv.tsv
+    output: output/example/patients/patient41/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 530
+    wildcards: project=example, patient=patient41, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient41/sample1/somatic_sv.tsv -o output/example/patients/patient41/sample1/sv_signatures/sv_catalog.tsv
+Finished job 530.
+33 of 476 steps (7%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient39/sample1/somatic_sv.tsv
+    output: output/example/patients/patient39/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 461
+    wildcards: project=example, patient=patient39, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient39/sample1/somatic_sv.tsv -o output/example/patients/patient39/sample1/sv_signatures/sv_catalog.tsv
+Finished job 461.
+34 of 476 steps (7%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient36/sample1/somatic_sv.tsv
+    output: output/example/patients/patient36/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 527
+    wildcards: project=example, patient=patient36, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient36/sample1/somatic_sv.tsv -o output/example/patients/patient36/sample1/sv_signatures/sv_catalog.tsv
+Finished job 527.
+35 of 476 steps (7%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient23/sample1/somatic_sv.tsv
+    output: output/example/patients/patient23/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 483
+    wildcards: project=example, patient=patient23, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient23/sample1/somatic_sv.tsv -o output/example/patients/patient23/sample1/sv_signatures/sv_catalog.tsv
+Finished job 483.
+36 of 476 steps (8%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient37/sample1/somatic_sv.tsv
+    output: output/example/patients/patient37/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 544
+    wildcards: project=example, patient=patient37, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient37/sample1/somatic_sv.tsv -o output/example/patients/patient37/sample1/sv_signatures/sv_catalog.tsv
+Finished job 544.
+37 of 476 steps (8%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient20/sample1/somatic_sv.tsv
+    output: output/example/patients/patient20/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 449
+    wildcards: project=example, patient=patient20, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient20/sample1/somatic_sv.tsv -o output/example/patients/patient20/sample1/sv_signatures/sv_catalog.tsv
+Finished job 449.
+38 of 476 steps (8%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient43/sample1/somatic_sv.tsv
+    output: output/example/patients/patient43/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 422
+    wildcards: project=example, patient=patient43, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient43/sample1/somatic_sv.tsv -o output/example/patients/patient43/sample1/sv_signatures/sv_catalog.tsv
+Finished job 422.
+39 of 476 steps (8%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient24/sample1/somatic_sv.tsv
+    output: output/example/patients/patient24/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 458
+    wildcards: project=example, patient=patient24, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient24/sample1/somatic_sv.tsv -o output/example/patients/patient24/sample1/sv_signatures/sv_catalog.tsv
+Finished job 458.
+40 of 476 steps (8%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient44/sample1/somatic_sv.tsv
+    output: output/example/patients/patient44/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 472
+    wildcards: project=example, patient=patient44, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient44/sample1/somatic_sv.tsv -o output/example/patients/patient44/sample1/sv_signatures/sv_catalog.tsv
+Finished job 472.
+41 of 476 steps (9%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient45/sample1/somatic_sv.tsv
+    output: output/example/patients/patient45/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 433
+    wildcards: project=example, patient=patient45, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient45/sample1/somatic_sv.tsv -o output/example/patients/patient45/sample1/sv_signatures/sv_catalog.tsv
+Finished job 433.
+42 of 476 steps (9%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient34/sample1/somatic_sv.tsv
+    output: output/example/patients/patient34/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 554
+    wildcards: project=example, patient=patient34, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient34/sample1/somatic_sv.tsv -o output/example/patients/patient34/sample1/sv_signatures/sv_catalog.tsv
+Finished job 554.
+43 of 476 steps (9%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient38/sample1/somatic_sv.tsv
+    output: output/example/patients/patient38/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 502
+    wildcards: project=example, patient=patient38, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient38/sample1/somatic_sv.tsv -o output/example/patients/patient38/sample1/sv_signatures/sv_catalog.tsv
+Finished job 502.
+44 of 476 steps (9%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient21/sample1/somatic_sv.tsv
+    output: output/example/patients/patient21/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 506
+    wildcards: project=example, patient=patient21, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient21/sample1/somatic_sv.tsv -o output/example/patients/patient21/sample1/sv_signatures/sv_catalog.tsv
+Finished job 506.
+45 of 476 steps (9%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient31/sample1/somatic_sv.tsv
+    output: output/example/patients/patient31/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 444
+    wildcards: project=example, patient=patient31, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient31/sample1/somatic_sv.tsv -o output/example/patients/patient31/sample1/sv_signatures/sv_catalog.tsv
+Finished job 444.
+46 of 476 steps (10%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient19/sample1/somatic_sv.tsv
+    output: output/example/patients/patient19/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 522
+    wildcards: project=example, patient=patient19, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient19/sample1/somatic_sv.tsv -o output/example/patients/patient19/sample1/sv_signatures/sv_catalog.tsv
+Finished job 522.
+47 of 476 steps (10%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient46/sample1/somatic_sv.tsv
+    output: output/example/patients/patient46/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 466
+    wildcards: project=example, patient=patient46, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient46/sample1/somatic_sv.tsv -o output/example/patients/patient46/sample1/sv_signatures/sv_catalog.tsv
+Finished job 466.
+48 of 476 steps (10%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient26/sample1/somatic_sv.tsv
+    output: output/example/patients/patient26/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 534
+    wildcards: project=example, patient=patient26, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient26/sample1/somatic_sv.tsv -o output/example/patients/patient26/sample1/sv_signatures/sv_catalog.tsv
+Finished job 534.
+49 of 476 steps (10%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient40/sample1/somatic_sv.tsv
+    output: output/example/patients/patient40/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 535
+    wildcards: project=example, patient=patient40, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient40/sample1/somatic_sv.tsv -o output/example/patients/patient40/sample1/sv_signatures/sv_catalog.tsv
+Finished job 535.
+50 of 476 steps (11%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient35/sample1/somatic_sv.tsv
+    output: output/example/patients/patient35/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 500
+    wildcards: project=example, patient=patient35, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient35/sample1/somatic_sv.tsv -o output/example/patients/patient35/sample1/sv_signatures/sv_catalog.tsv
+Finished job 500.
+51 of 476 steps (11%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient25/sample1/somatic_sv.tsv
+    output: output/example/patients/patient25/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 445
+    wildcards: project=example, patient=patient25, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient25/sample1/somatic_sv.tsv -o output/example/patients/patient25/sample1/sv_signatures/sv_catalog.tsv
+Finished job 445.
+52 of 476 steps (11%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient28/sample1/somatic_sv.tsv
+    output: output/example/patients/patient28/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 490
+    wildcards: project=example, patient=patient28, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient28/sample1/somatic_sv.tsv -o output/example/patients/patient28/sample1/sv_signatures/sv_catalog.tsv
+Finished job 490.
+53 of 476 steps (11%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient29/sample1/somatic_sv.tsv
+    output: output/example/patients/patient29/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 439
+    wildcards: project=example, patient=patient29, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient29/sample1/somatic_sv.tsv -o output/example/patients/patient29/sample1/sv_signatures/sv_catalog.tsv
+Finished job 439.
+54 of 476 steps (11%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient22/sample1/somatic_sv.tsv
+    output: output/example/patients/patient22/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 455
+    wildcards: project=example, patient=patient22, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient22/sample1/somatic_sv.tsv -o output/example/patients/patient22/sample1/sv_signatures/sv_catalog.tsv
+Finished job 455.
+55 of 476 steps (12%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient32/sample1/somatic_sv.tsv
+    output: output/example/patients/patient32/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 550
+    wildcards: project=example, patient=patient32, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient32/sample1/somatic_sv.tsv -o output/example/patients/patient32/sample1/sv_signatures/sv_catalog.tsv
+Finished job 550.
+56 of 476 steps (12%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient30/sample1/somatic_sv.tsv
+    output: output/example/patients/patient30/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 486
+    wildcards: project=example, patient=patient30, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient30/sample1/somatic_sv.tsv -o output/example/patients/patient30/sample1/sv_signatures/sv_catalog.tsv
+Finished job 486.
+57 of 476 steps (12%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient42/sample1/somatic_sv.tsv
+    output: output/example/patients/patient42/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 495
+    wildcards: project=example, patient=patient42, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient42/sample1/somatic_sv.tsv -o output/example/patients/patient42/sample1/sv_signatures/sv_catalog.tsv
+Finished job 495.
+58 of 476 steps (12%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient27/sample1/somatic_indels.vcf
+    output: output/example/patients/patient27/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 235
+    wildcards: project=example, patient=patient27, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient27/sample1/somatic_indels.vcf -o output/example/patients/patient27/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 235.
+59 of 476 steps (12%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient34/sample1/somatic_indels.vcf
+    output: output/example/patients/patient34/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 417
+    wildcards: project=example, patient=patient34, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient34/sample1/somatic_indels.vcf -o output/example/patients/patient34/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 417.
+60 of 476 steps (13%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient39/sample1/somatic_indels.vcf
+    output: output/example/patients/patient39/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 293
+    wildcards: project=example, patient=patient39, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient39/sample1/somatic_indels.vcf -o output/example/patients/patient39/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 293.
+61 of 476 steps (13%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient37/sample1/somatic_indels.vcf
+    output: output/example/patients/patient37/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 405
+    wildcards: project=example, patient=patient37, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient37/sample1/somatic_indels.vcf -o output/example/patients/patient37/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 405.
+62 of 476 steps (13%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient36/sample1/somatic_indels.vcf
+    output: output/example/patients/patient36/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 381
+    wildcards: project=example, patient=patient36, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient36/sample1/somatic_indels.vcf -o output/example/patients/patient36/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 381.
+63 of 476 steps (13%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient44/sample1/somatic_indels.vcf
+    output: output/example/patients/patient44/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 309
+    wildcards: project=example, patient=patient44, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient44/sample1/somatic_indels.vcf -o output/example/patients/patient44/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 309.
+64 of 476 steps (13%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient45/sample1/somatic_indels.vcf
+    output: output/example/patients/patient45/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 256
+    wildcards: project=example, patient=patient45, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient45/sample1/somatic_indels.vcf -o output/example/patients/patient45/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 256.
+65 of 476 steps (14%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient33/sample1/somatic_indels.vcf
+    output: output/example/patients/patient33/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 396
+    wildcards: project=example, patient=patient33, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient33/sample1/somatic_indels.vcf -o output/example/patients/patient33/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 396.
+66 of 476 steps (14%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient38/sample1/somatic_indels.vcf
+    output: output/example/patients/patient38/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 347
+    wildcards: project=example, patient=patient38, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient38/sample1/somatic_indels.vcf -o output/example/patients/patient38/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 347.
+67 of 476 steps (14%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient41/sample1/somatic_indels.vcf
+    output: output/example/patients/patient41/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 385
+    wildcards: project=example, patient=patient41, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient41/sample1/somatic_indels.vcf -o output/example/patients/patient41/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 385.
+68 of 476 steps (14%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient32/sample1/somatic_indels.vcf
+    output: output/example/patients/patient32/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 411
+    wildcards: project=example, patient=patient32, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient32/sample1/somatic_indels.vcf -o output/example/patients/patient32/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 411.
+69 of 476 steps (14%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient43/sample1/somatic_indels.vcf
+    output: output/example/patients/patient43/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 238
+    wildcards: project=example, patient=patient43, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient43/sample1/somatic_indels.vcf -o output/example/patients/patient43/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 238.
+70 of 476 steps (15%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient17/sample1/somatic_indels.vcf
+    output: output/example/patients/patient17/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 369
+    wildcards: project=example, patient=patient17, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient17/sample1/somatic_indels.vcf -o output/example/patients/patient17/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 369.
+71 of 476 steps (15%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient25/sample1/somatic_indels.vcf
+    output: output/example/patients/patient25/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 271
+    wildcards: project=example, patient=patient25, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient25/sample1/somatic_indels.vcf -o output/example/patients/patient25/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 271.
+72 of 476 steps (15%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient30/sample1/somatic_indels.vcf
+    output: output/example/patients/patient30/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 322
+    wildcards: project=example, patient=patient30, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient30/sample1/somatic_indels.vcf -o output/example/patients/patient30/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 322.
+73 of 476 steps (15%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient24/sample1/somatic_indels.vcf
+    output: output/example/patients/patient24/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 286
+    wildcards: project=example, patient=patient24, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient24/sample1/somatic_indels.vcf -o output/example/patients/patient24/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 286.
+74 of 476 steps (16%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient20/sample1/somatic_indels.vcf
+    output: output/example/patients/patient20/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 275
+    wildcards: project=example, patient=patient20, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient20/sample1/somatic_indels.vcf -o output/example/patients/patient20/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 275.
+75 of 476 steps (16%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient19/sample1/somatic_indels.vcf
+    output: output/example/patients/patient19/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 371
+    wildcards: project=example, patient=patient19, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient19/sample1/somatic_indels.vcf -o output/example/patients/patient19/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 371.
+76 of 476 steps (16%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient35/sample1/somatic_indels.vcf
+    output: output/example/patients/patient35/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 345
+    wildcards: project=example, patient=patient35, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient35/sample1/somatic_indels.vcf -o output/example/patients/patient35/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 345.
+77 of 476 steps (16%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient22/sample1/somatic_indels.vcf
+    output: output/example/patients/patient22/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 284
+    wildcards: project=example, patient=patient22, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient22/sample1/somatic_indels.vcf -o output/example/patients/patient22/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 284.
+78 of 476 steps (16%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient18/sample1/somatic_indels.vcf
+    output: output/example/patients/patient18/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 398
+    wildcards: project=example, patient=patient18, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient18/sample1/somatic_indels.vcf -o output/example/patients/patient18/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 398.
+79 of 476 steps (17%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient31/sample1/somatic_indels.vcf
+    output: output/example/patients/patient31/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 266
+    wildcards: project=example, patient=patient31, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient31/sample1/somatic_indels.vcf -o output/example/patients/patient31/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 266.
+80 of 476 steps (17%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient40/sample1/somatic_indels.vcf
+    output: output/example/patients/patient40/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 391
+    wildcards: project=example, patient=patient40, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient40/sample1/somatic_indels.vcf -o output/example/patients/patient40/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 391.
+81 of 476 steps (17%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient46/sample1/somatic_indels.vcf
+    output: output/example/patients/patient46/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 299
+    wildcards: project=example, patient=patient46, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient46/sample1/somatic_indels.vcf -o output/example/patients/patient46/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 299.
+82 of 476 steps (17%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient29/sample1/somatic_indels.vcf
+    output: output/example/patients/patient29/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 265
+    wildcards: project=example, patient=patient29, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient29/sample1/somatic_indels.vcf -o output/example/patients/patient29/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 265.
+83 of 476 steps (17%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient28/sample1/somatic_indels.vcf
+    output: output/example/patients/patient28/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 331
+    wildcards: project=example, patient=patient28, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient28/sample1/somatic_indels.vcf -o output/example/patients/patient28/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 331.
+84 of 476 steps (18%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient23/sample1/somatic_indels.vcf
+    output: output/example/patients/patient23/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 319
+    wildcards: project=example, patient=patient23, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient23/sample1/somatic_indels.vcf -o output/example/patients/patient23/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 319.
+85 of 476 steps (18%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient26/sample1/somatic_indels.vcf
+    output: output/example/patients/patient26/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 387
+    wildcards: project=example, patient=patient26, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient26/sample1/somatic_indels.vcf -o output/example/patients/patient26/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 387.
+86 of 476 steps (18%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient11/sample1/somatic_indels.vcf
+    output: output/example/patients/patient11/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 253
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient11/sample1/somatic_indels.vcf -o output/example/patients/patient11/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 253.
+87 of 476 steps (18%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient42/sample1/somatic_indels.vcf
+    output: output/example/patients/patient42/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 335
+    wildcards: project=example, patient=patient42, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient42/sample1/somatic_indels.vcf -o output/example/patients/patient42/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 335.
+88 of 476 steps (18%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient2/sample1/somatic_indels.vcf
+    output: output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 314
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient2/sample1/somatic_indels.vcf -o output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 314.
+89 of 476 steps (19%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient14/sample1/somatic_indels.vcf
+    output: output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 281
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient14/sample1/somatic_indels.vcf -o output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 281.
+90 of 476 steps (19%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient13/sample1/somatic_indels.vcf
+    output: output/example/patients/patient13/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 302
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient13/sample1/somatic_indels.vcf -o output/example/patients/patient13/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 302.
+91 of 476 steps (19%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient8/sample1/somatic_indels.vcf
+    output: output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 310
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient8/sample1/somatic_indels.vcf -o output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+Error in rule indel_annotation:
+    jobid: 310
+    output: output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+
+RuleException:
+CalledProcessError in line 184 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient8/sample1/somatic_indels.vcf -o output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 184, in __rule_indel_annotation
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-03-03T000127.521715.snakemake.log

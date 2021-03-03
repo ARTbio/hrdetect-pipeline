@@ -1,0 +1,108 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	1	combine_scores
+	1	example_segments
+	1	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	1	indel_annotation
+	1	microhomology_calculation
+	1	snv_signatures_signit_exposures
+	1	snv_signatures_signit_summary
+	1	sv_signatures_signit_exposures
+	1	sv_signatures_signit_summary
+	13
+
+rule indel_annotation:
+    input: data/example/patients/patient2/sample1/somatic_indels.vcf
+    output: output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 11
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient2/sample1/somatic_indels.vcf -o output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 11.
+1 of 13 steps (8%) done
+
+rule example_segments:
+    input: examples/example/patient2/sample1/segments.tsv
+    output: data/example/patients/patient2/sample1/segments.tsv
+    jobid: 10
+    wildcards: patient=patient2, sample=sample1
+
+Finished job 10.
+2 of 13 steps (15%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds
+    jobid: 9
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 9.
+3 of 13 steps (23%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 12
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 12.
+4 of 13 steps (31%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 5
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 5.
+5 of 13 steps (38%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 8
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 8.
+6 of 13 steps (46%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient2/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 7
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient2/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 7.
+7 of 13 steps (54%) done
+
+rule hrd_scores:
+    input: data/example/patients/patient2/sample1/segments.tsv
+    output: output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv
+    jobid: 6
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient2/sample1/segments.tsv -o output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv --genome GRCh38 --hrdtools=git/hrdtools
+Error in rule hrd_scores:
+    jobid: 6
+    output: output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv
+
+RuleException:
+CalledProcessError in line 204 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient2/sample1/segments.tsv -o output/example/patients/patient2/sample1/hrd_scores/hrd_score.tsv --genome GRCh38 --hrdtools=git/hrdtools ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 204, in __rule_hrd_scores
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-02-26T152832.411767.snakemake.log

@@ -1,0 +1,71 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	4	combine_scores
+	1	example_segments
+	4	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	4	indel_annotation
+	4	microhomology_calculation
+	4	mutation_catalogs
+	4	snv_signatures_signit_exposures
+	4	snv_signatures_signit_summary
+	4	sv_catalogs
+	4	sv_signatures_signit_exposures
+	4	sv_signatures_signit_summary
+	45
+
+rule mutation_catalogs:
+    input: data/example/patients/patient1/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 41
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient1/sample1/somatic_snvs.vcf -c output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 41.
+1 of 45 steps (2%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient2/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 43
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient2/sample1/somatic_snvs.vcf -c output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 43.
+2 of 45 steps (4%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient3/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 47
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient3/sample1/somatic_snvs.vcf -c output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 47.
+3 of 45 steps (7%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient4/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 51
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient4/sample1/somatic_snvs.vcf -c output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Error in rule mutation_catalogs:
+    jobid: 51
+    output: output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv
+
+RuleException:
+CalledProcessError in line 90 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient4/sample1/somatic_snvs.vcf -c output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv --ref hg19 ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 90, in __rule_mutation_catalogs
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-02-25T144825.939359.snakemake.log

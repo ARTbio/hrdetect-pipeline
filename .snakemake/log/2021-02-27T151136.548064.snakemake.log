@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	hrdetect_output_table
+	2
+
+rule hrdetect_output_table:
+    input: output/example/cohorts/all/hrdetect/hrdetect_input_table.tsv
+    output: output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+    log: output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+    jobid: 1
+    wildcards: project=example, cohort=all
+
+Rscript scripts/hrdetect/compute_hrdetect.R -i output/example/cohorts/all/hrdetect/hrdetect_input_table.tsv -o output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+Error in rule hrdetect_output_table:
+    jobid: 1
+    output: output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+    log: output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+
+RuleException:
+CalledProcessError in line 256 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/hrdetect/compute_hrdetect.R -i output/example/cohorts/all/hrdetect/hrdetect_input_table.tsv -o output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 256, in __rule_hrdetect_output_table
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job hrdetect_output_table since they might be corrupted:
+output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-02-27T151136.548064.snakemake.log

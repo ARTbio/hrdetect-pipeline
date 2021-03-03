@@ -1,0 +1,72 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	1	combine_scores
+	1	example_indels
+	1	example_segments
+	1	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	1	indel_annotation
+	1	microhomology_calculation
+	1	mutation_catalogs
+	1	snv_signatures_signit_exposures
+	1	snv_signatures_signit_summary
+	1	sv_catalogs
+	1	sv_signatures_signit_exposures
+	1	sv_signatures_signit_summary
+	16
+
+rule mutation_catalogs:
+    input: data/example/patients/patient2/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 14
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient2/sample1/somatic_snvs.vcf -c output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 14.
+1 of 16 steps (6%) done
+
+rule example_indels:
+    input: examples/example/patient2/sample1/somatic_indels.vcf
+    output: data/example/patients/patient2/sample1/somatic_indels.vcf
+    jobid: 13
+    wildcards: patient=patient2, sample=sample1
+
+cp -f examples/example/patient2/sample1/somatic_indels.vcf data/example/patients/patient2/sample1/somatic_indels.vcf
+Finished job 13.
+2 of 16 steps (12%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient2/sample1/somatic_sv.tsv
+    output: output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 15
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient2/sample1/somatic_sv.tsv -o output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+Finished job 15.
+3 of 16 steps (19%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient2/sample1/somatic_indels.vcf
+    output: output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 9
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient2/sample1/somatic_indels.vcf -o output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+Error in rule indel_annotation:
+    jobid: 9
+    output: output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+
+RuleException:
+CalledProcessError in line 184 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient2/sample1/somatic_indels.vcf -o output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 184, in __rule_indel_annotation
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-02-26T151331.832102.snakemake.log

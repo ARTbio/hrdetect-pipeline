@@ -1,0 +1,1968 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	16	combine_scores
+	16	example_indels
+	16	example_segments
+	16	example_snvs
+	16	example_sv
+	16	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	16	indel_annotation
+	16	microhomology_calculation
+	16	mutation_catalogs
+	16	snv_signatures_signit_exposures
+	16	snv_signatures_signit_summary
+	16	sv_catalogs
+	16	sv_signatures_signit_exposures
+	16	sv_signatures_signit_summary
+	228
+
+rule example_snvs:
+    input: examples/example/patient14/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient14/sample1/somatic_snvs.vcf
+    jobid: 227
+    wildcards: patient=patient14, sample=sample1
+
+cp -f examples/example/patient14/sample1/somatic_snvs.vcf data/example/patients/patient14/sample1/somatic_snvs.vcf
+Finished job 227.
+1 of 228 steps (0.44%) done
+
+rule example_snvs:
+    input: examples/example/patient11/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient11/sample1/somatic_snvs.vcf
+    jobid: 206
+    wildcards: patient=patient11, sample=sample1
+
+cp -f examples/example/patient11/sample1/somatic_snvs.vcf data/example/patients/patient11/sample1/somatic_snvs.vcf
+Finished job 206.
+2 of 228 steps (0.88%) done
+
+rule example_snvs:
+    input: examples/example/patient10/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient10/sample1/somatic_snvs.vcf
+    jobid: 204
+    wildcards: patient=patient10, sample=sample1
+
+cp -f examples/example/patient10/sample1/somatic_snvs.vcf data/example/patients/patient10/sample1/somatic_snvs.vcf
+Finished job 204.
+3 of 228 steps (1%) done
+
+rule example_snvs:
+    input: examples/example/patient15/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient15/sample1/somatic_snvs.vcf
+    jobid: 197
+    wildcards: patient=patient15, sample=sample1
+
+cp -f examples/example/patient15/sample1/somatic_snvs.vcf data/example/patients/patient15/sample1/somatic_snvs.vcf
+Finished job 197.
+4 of 228 steps (2%) done
+
+rule example_snvs:
+    input: examples/example/patient8/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient8/sample1/somatic_snvs.vcf
+    jobid: 203
+    wildcards: patient=patient8, sample=sample1
+
+cp -f examples/example/patient8/sample1/somatic_snvs.vcf data/example/patients/patient8/sample1/somatic_snvs.vcf
+Finished job 203.
+5 of 228 steps (2%) done
+
+rule example_snvs:
+    input: examples/example/patient2/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient2/sample1/somatic_snvs.vcf
+    jobid: 218
+    wildcards: patient=patient2, sample=sample1
+
+cp -f examples/example/patient2/sample1/somatic_snvs.vcf data/example/patients/patient2/sample1/somatic_snvs.vcf
+Finished job 218.
+6 of 228 steps (3%) done
+
+rule example_snvs:
+    input: examples/example/patient9/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient9/sample1/somatic_snvs.vcf
+    jobid: 221
+    wildcards: patient=patient9, sample=sample1
+
+cp -f examples/example/patient9/sample1/somatic_snvs.vcf data/example/patients/patient9/sample1/somatic_snvs.vcf
+Finished job 221.
+7 of 228 steps (3%) done
+
+rule example_snvs:
+    input: examples/example/patient13/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient13/sample1/somatic_snvs.vcf
+    jobid: 201
+    wildcards: patient=patient13, sample=sample1
+
+cp -f examples/example/patient13/sample1/somatic_snvs.vcf data/example/patients/patient13/sample1/somatic_snvs.vcf
+Finished job 201.
+8 of 228 steps (4%) done
+
+rule example_snvs:
+    input: examples/example/patient1/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient1/sample1/somatic_snvs.vcf
+    jobid: 213
+    wildcards: patient=patient1, sample=sample1
+
+cp -f examples/example/patient1/sample1/somatic_snvs.vcf data/example/patients/patient1/sample1/somatic_snvs.vcf
+Finished job 213.
+9 of 228 steps (4%) done
+
+rule example_snvs:
+    input: examples/example/patient7/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient7/sample1/somatic_snvs.vcf
+    jobid: 208
+    wildcards: patient=patient7, sample=sample1
+
+cp -f examples/example/patient7/sample1/somatic_snvs.vcf data/example/patients/patient7/sample1/somatic_snvs.vcf
+Finished job 208.
+10 of 228 steps (4%) done
+
+rule example_snvs:
+    input: examples/example/patient5/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient5/sample1/somatic_snvs.vcf
+    jobid: 210
+    wildcards: patient=patient5, sample=sample1
+
+cp -f examples/example/patient5/sample1/somatic_snvs.vcf data/example/patients/patient5/sample1/somatic_snvs.vcf
+Finished job 210.
+11 of 228 steps (5%) done
+
+rule example_snvs:
+    input: examples/example/patient4/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient4/sample1/somatic_snvs.vcf
+    jobid: 216
+    wildcards: patient=patient4, sample=sample1
+
+cp -f examples/example/patient4/sample1/somatic_snvs.vcf data/example/patients/patient4/sample1/somatic_snvs.vcf
+Finished job 216.
+12 of 228 steps (5%) done
+
+rule example_snvs:
+    input: examples/example/patient3/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient3/sample1/somatic_snvs.vcf
+    jobid: 225
+    wildcards: patient=patient3, sample=sample1
+
+cp -f examples/example/patient3/sample1/somatic_snvs.vcf data/example/patients/patient3/sample1/somatic_snvs.vcf
+Finished job 225.
+13 of 228 steps (6%) done
+
+rule example_snvs:
+    input: examples/example/patient12/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient12/sample1/somatic_snvs.vcf
+    jobid: 215
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_snvs.vcf data/example/patients/patient12/sample1/somatic_snvs.vcf
+Finished job 215.
+14 of 228 steps (6%) done
+
+rule example_snvs:
+    input: examples/example/patient6/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient6/sample1/somatic_snvs.vcf
+    jobid: 198
+    wildcards: patient=patient6, sample=sample1
+
+cp -f examples/example/patient6/sample1/somatic_snvs.vcf data/example/patients/patient6/sample1/somatic_snvs.vcf
+Finished job 198.
+15 of 228 steps (7%) done
+
+rule example_snvs:
+    input: examples/example/patient16/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient16/sample1/somatic_snvs.vcf
+    jobid: 222
+    wildcards: patient=patient16, sample=sample1
+
+cp -f examples/example/patient16/sample1/somatic_snvs.vcf data/example/patients/patient16/sample1/somatic_snvs.vcf
+Finished job 222.
+16 of 228 steps (7%) done
+
+rule example_sv:
+    input: examples/example/patient6/sample1/somatic_sv.tsv
+    output: data/example/patients/patient6/sample1/somatic_sv.tsv
+    jobid: 199
+    wildcards: patient=patient6, sample=sample1
+
+cp -f examples/example/patient6/sample1/somatic_sv.tsv data/example/patients/patient6/sample1/somatic_sv.tsv
+Finished job 199.
+17 of 228 steps (7%) done
+
+rule example_sv:
+    input: examples/example/patient16/sample1/somatic_sv.tsv
+    output: data/example/patients/patient16/sample1/somatic_sv.tsv
+    jobid: 223
+    wildcards: patient=patient16, sample=sample1
+
+cp -f examples/example/patient16/sample1/somatic_sv.tsv data/example/patients/patient16/sample1/somatic_sv.tsv
+Finished job 223.
+18 of 228 steps (8%) done
+
+rule example_sv:
+    input: examples/example/patient4/sample1/somatic_sv.tsv
+    output: data/example/patients/patient4/sample1/somatic_sv.tsv
+    jobid: 217
+    wildcards: patient=patient4, sample=sample1
+
+cp -f examples/example/patient4/sample1/somatic_sv.tsv data/example/patients/patient4/sample1/somatic_sv.tsv
+Finished job 217.
+19 of 228 steps (8%) done
+
+rule example_sv:
+    input: examples/example/patient13/sample1/somatic_sv.tsv
+    output: data/example/patients/patient13/sample1/somatic_sv.tsv
+    jobid: 200
+    wildcards: patient=patient13, sample=sample1
+
+cp -f examples/example/patient13/sample1/somatic_sv.tsv data/example/patients/patient13/sample1/somatic_sv.tsv
+Finished job 200.
+20 of 228 steps (9%) done
+
+rule example_sv:
+    input: examples/example/patient7/sample1/somatic_sv.tsv
+    output: data/example/patients/patient7/sample1/somatic_sv.tsv
+    jobid: 209
+    wildcards: patient=patient7, sample=sample1
+
+cp -f examples/example/patient7/sample1/somatic_sv.tsv data/example/patients/patient7/sample1/somatic_sv.tsv
+Finished job 209.
+21 of 228 steps (9%) done
+
+rule example_sv:
+    input: examples/example/patient2/sample1/somatic_sv.tsv
+    output: data/example/patients/patient2/sample1/somatic_sv.tsv
+    jobid: 219
+    wildcards: patient=patient2, sample=sample1
+
+cp -f examples/example/patient2/sample1/somatic_sv.tsv data/example/patients/patient2/sample1/somatic_sv.tsv
+Finished job 219.
+22 of 228 steps (10%) done
+
+rule example_sv:
+    input: examples/example/patient3/sample1/somatic_sv.tsv
+    output: data/example/patients/patient3/sample1/somatic_sv.tsv
+    jobid: 224
+    wildcards: patient=patient3, sample=sample1
+
+cp -f examples/example/patient3/sample1/somatic_sv.tsv data/example/patients/patient3/sample1/somatic_sv.tsv
+Finished job 224.
+23 of 228 steps (10%) done
+
+rule example_sv:
+    input: examples/example/patient9/sample1/somatic_sv.tsv
+    output: data/example/patients/patient9/sample1/somatic_sv.tsv
+    jobid: 220
+    wildcards: patient=patient9, sample=sample1
+
+cp -f examples/example/patient9/sample1/somatic_sv.tsv data/example/patients/patient9/sample1/somatic_sv.tsv
+Finished job 220.
+24 of 228 steps (11%) done
+
+rule example_sv:
+    input: examples/example/patient10/sample1/somatic_sv.tsv
+    output: data/example/patients/patient10/sample1/somatic_sv.tsv
+    jobid: 205
+    wildcards: patient=patient10, sample=sample1
+
+cp -f examples/example/patient10/sample1/somatic_sv.tsv data/example/patients/patient10/sample1/somatic_sv.tsv
+Finished job 205.
+25 of 228 steps (11%) done
+
+rule example_sv:
+    input: examples/example/patient15/sample1/somatic_sv.tsv
+    output: data/example/patients/patient15/sample1/somatic_sv.tsv
+    jobid: 196
+    wildcards: patient=patient15, sample=sample1
+
+cp -f examples/example/patient15/sample1/somatic_sv.tsv data/example/patients/patient15/sample1/somatic_sv.tsv
+Finished job 196.
+26 of 228 steps (11%) done
+
+rule example_sv:
+    input: examples/example/patient5/sample1/somatic_sv.tsv
+    output: data/example/patients/patient5/sample1/somatic_sv.tsv
+    jobid: 211
+    wildcards: patient=patient5, sample=sample1
+
+cp -f examples/example/patient5/sample1/somatic_sv.tsv data/example/patients/patient5/sample1/somatic_sv.tsv
+Finished job 211.
+27 of 228 steps (12%) done
+
+rule example_sv:
+    input: examples/example/patient12/sample1/somatic_sv.tsv
+    output: data/example/patients/patient12/sample1/somatic_sv.tsv
+    jobid: 214
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_sv.tsv data/example/patients/patient12/sample1/somatic_sv.tsv
+Finished job 214.
+28 of 228 steps (12%) done
+
+rule example_sv:
+    input: examples/example/patient8/sample1/somatic_sv.tsv
+    output: data/example/patients/patient8/sample1/somatic_sv.tsv
+    jobid: 202
+    wildcards: patient=patient8, sample=sample1
+
+cp -f examples/example/patient8/sample1/somatic_sv.tsv data/example/patients/patient8/sample1/somatic_sv.tsv
+Finished job 202.
+29 of 228 steps (13%) done
+
+rule example_sv:
+    input: examples/example/patient11/sample1/somatic_sv.tsv
+    output: data/example/patients/patient11/sample1/somatic_sv.tsv
+    jobid: 207
+    wildcards: patient=patient11, sample=sample1
+
+cp -f examples/example/patient11/sample1/somatic_sv.tsv data/example/patients/patient11/sample1/somatic_sv.tsv
+Finished job 207.
+30 of 228 steps (13%) done
+
+rule example_sv:
+    input: examples/example/patient1/sample1/somatic_sv.tsv
+    output: data/example/patients/patient1/sample1/somatic_sv.tsv
+    jobid: 212
+    wildcards: patient=patient1, sample=sample1
+
+cp -f examples/example/patient1/sample1/somatic_sv.tsv data/example/patients/patient1/sample1/somatic_sv.tsv
+Finished job 212.
+31 of 228 steps (14%) done
+
+rule example_sv:
+    input: examples/example/patient14/sample1/somatic_sv.tsv
+    output: data/example/patients/patient14/sample1/somatic_sv.tsv
+    jobid: 226
+    wildcards: patient=patient14, sample=sample1
+
+cp -f examples/example/patient14/sample1/somatic_sv.tsv data/example/patients/patient14/sample1/somatic_sv.tsv
+Finished job 226.
+32 of 228 steps (14%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient14/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 195
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient14/sample1/somatic_snvs.vcf -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 195.
+33 of 228 steps (14%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient11/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient11/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 163
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient11/sample1/somatic_snvs.vcf -c output/example/patients/patient11/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 163.
+34 of 228 steps (15%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient10/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient10/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 161
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient10/sample1/somatic_snvs.vcf -c output/example/patients/patient10/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 161.
+35 of 228 steps (15%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient15/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient15/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 150
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient15/sample1/somatic_snvs.vcf -c output/example/patients/patient15/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 150.
+36 of 228 steps (16%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient8/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient8/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 158
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient8/sample1/somatic_snvs.vcf -c output/example/patients/patient8/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 158.
+37 of 228 steps (16%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient2/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 182
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient2/sample1/somatic_snvs.vcf -c output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 182.
+38 of 228 steps (17%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient9/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient9/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 186
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient9/sample1/somatic_snvs.vcf -c output/example/patients/patient9/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 186.
+39 of 228 steps (17%) done
+
+rule example_indels:
+    input: examples/example/patient11/sample1/somatic_indels.vcf
+    output: data/example/patients/patient11/sample1/somatic_indels.vcf
+    jobid: 164
+    wildcards: patient=patient11, sample=sample1
+
+cp -f examples/example/patient11/sample1/somatic_indels.vcf data/example/patients/patient11/sample1/somatic_indels.vcf
+Finished job 164.
+40 of 228 steps (18%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient13/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient13/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 156
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient13/sample1/somatic_snvs.vcf -c output/example/patients/patient13/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 156.
+41 of 228 steps (18%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient1/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 174
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient1/sample1/somatic_snvs.vcf -c output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 174.
+42 of 228 steps (18%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient7/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient7/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 166
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient7/sample1/somatic_snvs.vcf -c output/example/patients/patient7/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 166.
+43 of 228 steps (19%) done
+
+rule example_indels:
+    input: examples/example/patient2/sample1/somatic_indels.vcf
+    output: data/example/patients/patient2/sample1/somatic_indels.vcf
+    jobid: 181
+    wildcards: patient=patient2, sample=sample1
+
+cp -f examples/example/patient2/sample1/somatic_indels.vcf data/example/patients/patient2/sample1/somatic_indels.vcf
+Finished job 181.
+44 of 228 steps (19%) done
+
+rule example_indels:
+    input: examples/example/patient14/sample1/somatic_indels.vcf
+    output: data/example/patients/patient14/sample1/somatic_indels.vcf
+    jobid: 193
+    wildcards: patient=patient14, sample=sample1
+
+cp -f examples/example/patient14/sample1/somatic_indels.vcf data/example/patients/patient14/sample1/somatic_indels.vcf
+Finished job 193.
+45 of 228 steps (20%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient5/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient5/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 169
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient5/sample1/somatic_snvs.vcf -c output/example/patients/patient5/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 169.
+46 of 228 steps (20%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient4/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 178
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient4/sample1/somatic_snvs.vcf -c output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 178.
+47 of 228 steps (21%) done
+
+rule example_indels:
+    input: examples/example/patient13/sample1/somatic_indels.vcf
+    output: data/example/patients/patient13/sample1/somatic_indels.vcf
+    jobid: 155
+    wildcards: patient=patient13, sample=sample1
+
+cp -f examples/example/patient13/sample1/somatic_indels.vcf data/example/patients/patient13/sample1/somatic_indels.vcf
+Finished job 155.
+48 of 228 steps (21%) done
+
+rule example_indels:
+    input: examples/example/patient15/sample1/somatic_indels.vcf
+    output: data/example/patients/patient15/sample1/somatic_indels.vcf
+    jobid: 149
+    wildcards: patient=patient15, sample=sample1
+
+cp -f examples/example/patient15/sample1/somatic_indels.vcf data/example/patients/patient15/sample1/somatic_indels.vcf
+Finished job 149.
+49 of 228 steps (21%) done
+
+rule example_indels:
+    input: examples/example/patient7/sample1/somatic_indels.vcf
+    output: data/example/patients/patient7/sample1/somatic_indels.vcf
+    jobid: 168
+    wildcards: patient=patient7, sample=sample1
+
+cp -f examples/example/patient7/sample1/somatic_indels.vcf data/example/patients/patient7/sample1/somatic_indels.vcf
+Finished job 168.
+50 of 228 steps (22%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient3/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 191
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient3/sample1/somatic_snvs.vcf -c output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 191.
+51 of 228 steps (22%) done
+
+rule example_indels:
+    input: examples/example/patient8/sample1/somatic_indels.vcf
+    output: data/example/patients/patient8/sample1/somatic_indels.vcf
+    jobid: 159
+    wildcards: patient=patient8, sample=sample1
+
+cp -f examples/example/patient8/sample1/somatic_indels.vcf data/example/patients/patient8/sample1/somatic_indels.vcf
+Finished job 159.
+52 of 228 steps (23%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient12/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 176
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient12/sample1/somatic_snvs.vcf -c output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 176.
+53 of 228 steps (23%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient6/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient6/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 151
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient6/sample1/somatic_snvs.vcf -c output/example/patients/patient6/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 151.
+54 of 228 steps (24%) done
+
+rule example_indels:
+    input: examples/example/patient9/sample1/somatic_indels.vcf
+    output: data/example/patients/patient9/sample1/somatic_indels.vcf
+    jobid: 184
+    wildcards: patient=patient9, sample=sample1
+
+cp -f examples/example/patient9/sample1/somatic_indels.vcf data/example/patients/patient9/sample1/somatic_indels.vcf
+Finished job 184.
+55 of 228 steps (24%) done
+
+rule example_indels:
+    input: examples/example/patient10/sample1/somatic_indels.vcf
+    output: data/example/patients/patient10/sample1/somatic_indels.vcf
+    jobid: 160
+    wildcards: patient=patient10, sample=sample1
+
+cp -f examples/example/patient10/sample1/somatic_indels.vcf data/example/patients/patient10/sample1/somatic_indels.vcf
+Finished job 160.
+56 of 228 steps (25%) done
+
+rule example_indels:
+    input: examples/example/patient12/sample1/somatic_indels.vcf
+    output: data/example/patients/patient12/sample1/somatic_indels.vcf
+    jobid: 177
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_indels.vcf data/example/patients/patient12/sample1/somatic_indels.vcf
+Finished job 177.
+57 of 228 steps (25%) done
+
+rule example_indels:
+    input: examples/example/patient4/sample1/somatic_indels.vcf
+    output: data/example/patients/patient4/sample1/somatic_indels.vcf
+    jobid: 180
+    wildcards: patient=patient4, sample=sample1
+
+cp -f examples/example/patient4/sample1/somatic_indels.vcf data/example/patients/patient4/sample1/somatic_indels.vcf
+Finished job 180.
+58 of 228 steps (25%) done
+
+rule example_indels:
+    input: examples/example/patient5/sample1/somatic_indels.vcf
+    output: data/example/patients/patient5/sample1/somatic_indels.vcf
+    jobid: 171
+    wildcards: patient=patient5, sample=sample1
+
+cp -f examples/example/patient5/sample1/somatic_indels.vcf data/example/patients/patient5/sample1/somatic_indels.vcf
+Finished job 171.
+59 of 228 steps (26%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient16/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient16/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 187
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient16/sample1/somatic_snvs.vcf -c output/example/patients/patient16/sample1/snv_signatures/mutation_catalog.tsv --ref GRCh38
+Finished job 187.
+60 of 228 steps (26%) done
+
+rule example_indels:
+    input: examples/example/patient6/sample1/somatic_indels.vcf
+    output: data/example/patients/patient6/sample1/somatic_indels.vcf
+    jobid: 153
+    wildcards: patient=patient6, sample=sample1
+
+cp -f examples/example/patient6/sample1/somatic_indels.vcf data/example/patients/patient6/sample1/somatic_indels.vcf
+Finished job 153.
+61 of 228 steps (27%) done
+
+rule example_indels:
+    input: examples/example/patient3/sample1/somatic_indels.vcf
+    output: data/example/patients/patient3/sample1/somatic_indels.vcf
+    jobid: 192
+    wildcards: patient=patient3, sample=sample1
+
+cp -f examples/example/patient3/sample1/somatic_indels.vcf data/example/patients/patient3/sample1/somatic_indels.vcf
+Finished job 192.
+62 of 228 steps (27%) done
+
+rule example_indels:
+    input: examples/example/patient1/sample1/somatic_indels.vcf
+    output: data/example/patients/patient1/sample1/somatic_indels.vcf
+    jobid: 172
+    wildcards: patient=patient1, sample=sample1
+
+cp -f examples/example/patient1/sample1/somatic_indels.vcf data/example/patients/patient1/sample1/somatic_indels.vcf
+Finished job 172.
+63 of 228 steps (28%) done
+
+rule example_indels:
+    input: examples/example/patient16/sample1/somatic_indels.vcf
+    output: data/example/patients/patient16/sample1/somatic_indels.vcf
+    jobid: 189
+    wildcards: patient=patient16, sample=sample1
+
+cp -f examples/example/patient16/sample1/somatic_indels.vcf data/example/patients/patient16/sample1/somatic_indels.vcf
+Finished job 189.
+64 of 228 steps (28%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient6/sample1/somatic_sv.tsv
+    output: output/example/patients/patient6/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 152
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient6/sample1/somatic_sv.tsv -o output/example/patients/patient6/sample1/sv_signatures/sv_catalog.tsv
+Finished job 152.
+65 of 228 steps (29%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient16/sample1/somatic_sv.tsv
+    output: output/example/patients/patient16/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 188
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient16/sample1/somatic_sv.tsv -o output/example/patients/patient16/sample1/sv_signatures/sv_catalog.tsv
+Finished job 188.
+66 of 228 steps (29%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient4/sample1/somatic_sv.tsv
+    output: output/example/patients/patient4/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 179
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient4/sample1/somatic_sv.tsv -o output/example/patients/patient4/sample1/sv_signatures/sv_catalog.tsv
+Finished job 179.
+67 of 228 steps (29%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient13/sample1/somatic_sv.tsv
+    output: output/example/patients/patient13/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 154
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient13/sample1/somatic_sv.tsv -o output/example/patients/patient13/sample1/sv_signatures/sv_catalog.tsv
+Finished job 154.
+68 of 228 steps (30%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient7/sample1/somatic_sv.tsv
+    output: output/example/patients/patient7/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 167
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient7/sample1/somatic_sv.tsv -o output/example/patients/patient7/sample1/sv_signatures/sv_catalog.tsv
+Finished job 167.
+69 of 228 steps (30%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient2/sample1/somatic_sv.tsv
+    output: output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 183
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient2/sample1/somatic_sv.tsv -o output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+Finished job 183.
+70 of 228 steps (31%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient3/sample1/somatic_sv.tsv
+    output: output/example/patients/patient3/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 190
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient3/sample1/somatic_sv.tsv -o output/example/patients/patient3/sample1/sv_signatures/sv_catalog.tsv
+Finished job 190.
+71 of 228 steps (31%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient9/sample1/somatic_sv.tsv
+    output: output/example/patients/patient9/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 185
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient9/sample1/somatic_sv.tsv -o output/example/patients/patient9/sample1/sv_signatures/sv_catalog.tsv
+Finished job 185.
+72 of 228 steps (32%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient10/sample1/somatic_sv.tsv
+    output: output/example/patients/patient10/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 162
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient10/sample1/somatic_sv.tsv -o output/example/patients/patient10/sample1/sv_signatures/sv_catalog.tsv
+Finished job 162.
+73 of 228 steps (32%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient15/sample1/somatic_sv.tsv
+    output: output/example/patients/patient15/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 148
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient15/sample1/somatic_sv.tsv -o output/example/patients/patient15/sample1/sv_signatures/sv_catalog.tsv
+Finished job 148.
+74 of 228 steps (32%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient5/sample1/somatic_sv.tsv
+    output: output/example/patients/patient5/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 170
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient5/sample1/somatic_sv.tsv -o output/example/patients/patient5/sample1/sv_signatures/sv_catalog.tsv
+Finished job 170.
+75 of 228 steps (33%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient12/sample1/somatic_sv.tsv
+    output: output/example/patients/patient12/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 175
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient12/sample1/somatic_sv.tsv -o output/example/patients/patient12/sample1/sv_signatures/sv_catalog.tsv
+Finished job 175.
+76 of 228 steps (33%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient8/sample1/somatic_sv.tsv
+    output: output/example/patients/patient8/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 157
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient8/sample1/somatic_sv.tsv -o output/example/patients/patient8/sample1/sv_signatures/sv_catalog.tsv
+Finished job 157.
+77 of 228 steps (34%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient11/sample1/somatic_sv.tsv
+    output: output/example/patients/patient11/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 165
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient11/sample1/somatic_sv.tsv -o output/example/patients/patient11/sample1/sv_signatures/sv_catalog.tsv
+Finished job 165.
+78 of 228 steps (34%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient1/sample1/somatic_sv.tsv
+    output: output/example/patients/patient1/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 173
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient1/sample1/somatic_sv.tsv -o output/example/patients/patient1/sample1/sv_signatures/sv_catalog.tsv
+Finished job 173.
+79 of 228 steps (35%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient14/sample1/somatic_sv.tsv
+    output: output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 194
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient14/sample1/somatic_sv.tsv -o output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+Finished job 194.
+80 of 228 steps (35%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient11/sample1/somatic_indels.vcf
+    output: output/example/patients/patient11/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 105
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient11/sample1/somatic_indels.vcf -o output/example/patients/patient11/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 105.
+81 of 228 steps (36%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient2/sample1/somatic_indels.vcf
+    output: output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 128
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient2/sample1/somatic_indels.vcf -o output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 128.
+82 of 228 steps (36%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient14/sample1/somatic_indels.vcf
+    output: output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 144
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient14/sample1/somatic_indels.vcf -o output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 144.
+83 of 228 steps (36%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient13/sample1/somatic_indels.vcf
+    output: output/example/patients/patient13/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 94
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient13/sample1/somatic_indels.vcf -o output/example/patients/patient13/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 94.
+84 of 228 steps (37%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient15/sample1/somatic_indels.vcf
+    output: output/example/patients/patient15/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 86
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient15/sample1/somatic_indels.vcf -o output/example/patients/patient15/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 86.
+85 of 228 steps (37%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient7/sample1/somatic_indels.vcf
+    output: output/example/patients/patient7/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 111
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient7/sample1/somatic_indels.vcf -o output/example/patients/patient7/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 111.
+86 of 228 steps (38%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient8/sample1/somatic_indels.vcf
+    output: output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 98
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient8/sample1/somatic_indels.vcf -o output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 98.
+87 of 228 steps (38%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient9/sample1/somatic_indels.vcf
+    output: output/example/patients/patient9/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 132
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient9/sample1/somatic_indels.vcf -o output/example/patients/patient9/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 132.
+88 of 228 steps (39%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient10/sample1/somatic_indels.vcf
+    output: output/example/patients/patient10/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 100
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient10/sample1/somatic_indels.vcf -o output/example/patients/patient10/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 100.
+89 of 228 steps (39%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient12/sample1/somatic_indels.vcf
+    output: output/example/patients/patient12/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 122
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient12/sample1/somatic_indels.vcf -o output/example/patients/patient12/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 122.
+90 of 228 steps (39%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient4/sample1/somatic_indels.vcf
+    output: output/example/patients/patient4/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 127
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient4/sample1/somatic_indels.vcf -o output/example/patients/patient4/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 127.
+91 of 228 steps (40%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient5/sample1/somatic_indels.vcf
+    output: output/example/patients/patient5/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 115
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient5/sample1/somatic_indels.vcf -o output/example/patients/patient5/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 115.
+92 of 228 steps (40%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient6/sample1/somatic_indels.vcf
+    output: output/example/patients/patient6/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 91
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient6/sample1/somatic_indels.vcf -o output/example/patients/patient6/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 91.
+93 of 228 steps (41%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient3/sample1/somatic_indels.vcf
+    output: output/example/patients/patient3/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 143
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient3/sample1/somatic_indels.vcf -o output/example/patients/patient3/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 143.
+94 of 228 steps (41%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient1/sample1/somatic_indels.vcf
+    output: output/example/patients/patient1/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 116
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient1/sample1/somatic_indels.vcf -o output/example/patients/patient1/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 116.
+95 of 228 steps (42%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient16/sample1/somatic_indels.vcf
+    output: output/example/patients/patient16/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 138
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient16/sample1/somatic_indels.vcf -o output/example/patients/patient16/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 138.
+96 of 228 steps (42%) done
+
+rule example_segments:
+    input: examples/example/patient1/sample1/segments.tsv
+    output: data/example/patients/patient1/sample1/segments.tsv
+    jobid: 119
+    wildcards: patient=patient1, sample=sample1
+
+Finished job 119.
+97 of 228 steps (43%) done
+
+rule example_segments:
+    input: examples/example/patient11/sample1/segments.tsv
+    output: data/example/patients/patient11/sample1/segments.tsv
+    jobid: 106
+    wildcards: patient=patient11, sample=sample1
+
+Finished job 106.
+98 of 228 steps (43%) done
+
+rule example_segments:
+    input: examples/example/patient15/sample1/segments.tsv
+    output: data/example/patients/patient15/sample1/segments.tsv
+    jobid: 85
+    wildcards: patient=patient15, sample=sample1
+
+Finished job 85.
+99 of 228 steps (43%) done
+
+rule example_segments:
+    input: examples/example/patient14/sample1/segments.tsv
+    output: data/example/patients/patient14/sample1/segments.tsv
+    jobid: 147
+    wildcards: patient=patient14, sample=sample1
+
+Finished job 147.
+100 of 228 steps (44%) done
+
+rule example_segments:
+    input: examples/example/patient13/sample1/segments.tsv
+    output: data/example/patients/patient13/sample1/segments.tsv
+    jobid: 92
+    wildcards: patient=patient13, sample=sample1
+
+Finished job 92.
+101 of 228 steps (44%) done
+
+rule example_segments:
+    input: examples/example/patient4/sample1/segments.tsv
+    output: data/example/patients/patient4/sample1/segments.tsv
+    jobid: 125
+    wildcards: patient=patient4, sample=sample1
+
+Finished job 125.
+102 of 228 steps (45%) done
+
+rule example_segments:
+    input: examples/example/patient10/sample1/segments.tsv
+    output: data/example/patients/patient10/sample1/segments.tsv
+    jobid: 103
+    wildcards: patient=patient10, sample=sample1
+
+Finished job 103.
+103 of 228 steps (45%) done
+
+rule example_segments:
+    input: examples/example/patient2/sample1/segments.tsv
+    output: data/example/patients/patient2/sample1/segments.tsv
+    jobid: 131
+    wildcards: patient=patient2, sample=sample1
+
+Finished job 131.
+104 of 228 steps (46%) done
+
+rule example_segments:
+    input: examples/example/patient7/sample1/segments.tsv
+    output: data/example/patients/patient7/sample1/segments.tsv
+    jobid: 109
+    wildcards: patient=patient7, sample=sample1
+
+Finished job 109.
+105 of 228 steps (46%) done
+
+rule example_segments:
+    input: examples/example/patient5/sample1/segments.tsv
+    output: data/example/patients/patient5/sample1/segments.tsv
+    jobid: 112
+    wildcards: patient=patient5, sample=sample1
+
+Finished job 112.
+106 of 228 steps (46%) done
+
+rule example_segments:
+    input: examples/example/patient9/sample1/segments.tsv
+    output: data/example/patients/patient9/sample1/segments.tsv
+    jobid: 135
+    wildcards: patient=patient9, sample=sample1
+
+Finished job 135.
+107 of 228 steps (47%) done
+
+rule example_segments:
+    input: examples/example/patient8/sample1/segments.tsv
+    output: data/example/patients/patient8/sample1/segments.tsv
+    jobid: 99
+    wildcards: patient=patient8, sample=sample1
+
+Finished job 99.
+108 of 228 steps (47%) done
+
+rule example_segments:
+    input: examples/example/patient6/sample1/segments.tsv
+    output: data/example/patients/patient6/sample1/segments.tsv
+    jobid: 88
+    wildcards: patient=patient6, sample=sample1
+
+Finished job 88.
+109 of 228 steps (48%) done
+
+rule example_segments:
+    input: examples/example/patient12/sample1/segments.tsv
+    output: data/example/patients/patient12/sample1/segments.tsv
+    jobid: 123
+    wildcards: patient=patient12, sample=sample1
+
+Finished job 123.
+110 of 228 steps (48%) done
+
+rule example_segments:
+    input: examples/example/patient16/sample1/segments.tsv
+    output: data/example/patients/patient16/sample1/segments.tsv
+    jobid: 139
+    wildcards: patient=patient16, sample=sample1
+
+Finished job 139.
+111 of 228 steps (49%) done
+
+rule example_segments:
+    input: examples/example/patient3/sample1/segments.tsv
+    output: data/example/patients/patient3/sample1/segments.tsv
+    jobid: 141
+    wildcards: patient=patient3, sample=sample1
+
+Finished job 141.
+112 of 228 steps (49%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient11/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient11/sample1/snv_signatures/signit_output.Rds
+    jobid: 104
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient11/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient11/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 104.
+113 of 228 steps (50%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds
+    jobid: 146
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 146.
+114 of 228 steps (50%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient8/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient8/sample1/snv_signatures/signit_output.Rds
+    jobid: 97
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient8/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient8/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 97.
+115 of 228 steps (50%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient10/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient10/sample1/snv_signatures/signit_output.Rds
+    jobid: 101
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient10/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient10/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 101.
+116 of 228 steps (51%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds
+    jobid: 129
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 129.
+117 of 228 steps (51%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient15/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient15/sample1/snv_signatures/signit_output.Rds
+    jobid: 87
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient15/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient15/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 87.
+118 of 228 steps (52%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient9/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient9/sample1/snv_signatures/signit_output.Rds
+    jobid: 134
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient9/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient9/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 134.
+119 of 228 steps (52%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient13/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient13/sample1/snv_signatures/signit_output.Rds
+    jobid: 95
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient13/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient13/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 95.
+120 of 228 steps (53%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient7/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient7/sample1/snv_signatures/signit_output.Rds
+    jobid: 108
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient7/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient7/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 108.
+121 of 228 steps (53%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient1/sample1/snv_signatures/signit_output.Rds
+    jobid: 118
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient1/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 118.
+122 of 228 steps (54%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient5/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient5/sample1/snv_signatures/signit_output.Rds
+    jobid: 113
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient5/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient5/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 113.
+123 of 228 steps (54%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient4/sample1/snv_signatures/signit_output.Rds
+    jobid: 124
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient4/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 124.
+124 of 228 steps (54%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds
+    jobid: 142
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 142.
+125 of 228 steps (55%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient12/sample1/snv_signatures/signit_output.Rds
+    jobid: 121
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient12/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 121.
+126 of 228 steps (55%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient6/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient6/sample1/snv_signatures/signit_output.Rds
+    jobid: 89
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient6/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient6/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 89.
+127 of 228 steps (56%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient16/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient16/sample1/snv_signatures/signit_output.Rds
+    jobid: 136
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient16/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient16/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 136.
+128 of 228 steps (56%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient16/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient16/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 137
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient16/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient16/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 137.
+129 of 228 steps (57%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient6/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient6/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 90
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient6/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient6/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 90.
+130 of 228 steps (57%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient11/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient11/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 107
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient11/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient11/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 107.
+131 of 228 steps (57%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient7/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient7/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 110
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient7/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient7/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 110.
+132 of 228 steps (58%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient13/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient13/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 93
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient13/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient13/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 93.
+133 of 228 steps (58%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient4/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient4/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 126
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient4/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient4/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 126.
+134 of 228 steps (59%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient15/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient15/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 84
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient15/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient15/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 84.
+135 of 228 steps (59%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient8/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient8/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 96
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient8/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient8/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 96.
+136 of 228 steps (60%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 130
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient2/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 130.
+137 of 228 steps (60%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient12/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient12/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 120
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient12/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient12/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 120.
+138 of 228 steps (61%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient9/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient9/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 133
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient9/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient9/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 133.
+139 of 228 steps (61%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient3/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient3/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 140
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient3/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient3/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 140.
+140 of 228 steps (61%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 145
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 145.
+141 of 228 steps (62%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient10/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient10/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 102
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient10/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient10/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 102.
+142 of 228 steps (62%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient5/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient5/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 114
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient5/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient5/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 114.
+143 of 228 steps (63%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient1/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient1/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 117
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient1/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient1/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 117.
+144 of 228 steps (63%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient16/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient16/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient16/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 72
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient16/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient16/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient16/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient16/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 72.
+145 of 228 steps (64%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient1/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient1/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient1/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 54
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient1/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient1/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient1/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient1/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 54.
+146 of 228 steps (64%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 65
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient2/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 65.
+147 of 228 steps (64%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient6/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient6/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient6/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 25
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient6/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient6/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient6/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient6/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 25.
+148 of 228 steps (65%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 78
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient3/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 78.
+149 of 228 steps (65%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient5/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient5/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient5/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 49
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient5/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient5/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient5/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient5/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 49.
+150 of 228 steps (66%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 82
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 82.
+151 of 228 steps (66%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient8/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient8/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient8/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 33
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient8/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient8/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient8/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient8/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 33.
+152 of 228 steps (67%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient10/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient10/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient10/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 37
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient10/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient10/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient10/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient10/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 37.
+153 of 228 steps (67%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient15/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient15/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient15/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 23
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient15/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient15/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient15/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient15/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 23.
+154 of 228 steps (68%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient9/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient9/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient9/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 70
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient9/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient9/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient9/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient9/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 70.
+155 of 228 steps (68%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient12/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient12/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient12/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 57
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient12/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient12/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient12/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient12/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 57.
+156 of 228 steps (68%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient4/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient4/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient4/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 60
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient4/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient4/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient4/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient4/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 60.
+157 of 228 steps (69%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient7/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient7/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient7/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 44
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient7/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient7/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient7/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient7/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 44.
+158 of 228 steps (69%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient13/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient13/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient13/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 31
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient13/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient13/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient13/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient13/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 31.
+159 of 228 steps (70%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient11/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient11/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient11/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 40
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient11/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient11/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient11/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient11/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 40.
+160 of 228 steps (70%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient10/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient10/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient10/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 38
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient10/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient10/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient10/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient10/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 38.
+161 of 228 steps (71%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient5/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient5/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient5/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 50
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient5/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient5/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient5/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient5/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 50.
+162 of 228 steps (71%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient3/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient3/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient3/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 76
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient3/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient3/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient3/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 76.
+163 of 228 steps (71%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient7/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient7/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient7/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 46
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient7/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient7/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient7/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient7/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 46.
+164 of 228 steps (72%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient9/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient9/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient9/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 69
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient9/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient9/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient9/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient9/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 69.
+165 of 228 steps (72%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient8/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient8/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient8/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 32
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient8/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient8/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient8/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient8/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 32.
+166 of 228 steps (73%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient12/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient12/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient12/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 56
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient12/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient12/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient12/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient12/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 56.
+167 of 228 steps (73%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient4/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient4/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient4/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 62
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient4/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient4/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient4/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient4/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 62.
+168 of 228 steps (74%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 81
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 81.
+169 of 228 steps (74%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient11/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient11/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient11/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 43
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient11/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient11/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient11/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient11/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 43.
+170 of 228 steps (75%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient1/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient1/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient1/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 53
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient1/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient1/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient1/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient1/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 53.
+171 of 228 steps (75%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient15/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient15/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient15/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 20
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient15/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient15/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient15/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient15/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 20.
+172 of 228 steps (75%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient13/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient13/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient13/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 29
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient13/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient13/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient13/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient13/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 29.
+173 of 228 steps (76%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient6/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient6/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient6/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 26
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient6/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient6/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient6/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient6/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 26.
+174 of 228 steps (76%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 66
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient2/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient2/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 66.
+175 of 228 steps (77%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient16/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient16/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient16/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 73
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient16/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient16/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient16/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient16/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 73.
+176 of 228 steps (77%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient11/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient11/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 41
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient11/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient11/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 41.
+177 of 228 steps (78%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient2/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 64
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient2/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient2/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 64.
+178 of 228 steps (78%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient14/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 80
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient14/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 80.
+179 of 228 steps (79%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient15/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient15/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 22
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient15/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient15/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 22.
+180 of 228 steps (79%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient13/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient13/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 30
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient13/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient13/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 30.
+181 of 228 steps (79%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient7/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient7/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 47
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient7/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient7/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 47.
+182 of 228 steps (80%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient8/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 34
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient8/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 34.
+183 of 228 steps (80%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient10/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient10/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 36
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient10/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient10/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 36.
+184 of 228 steps (81%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient9/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient9/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 68
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient9/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient9/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 68.
+185 of 228 steps (81%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient12/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient12/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 58
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient12/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient12/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 58.
+186 of 228 steps (82%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient4/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient4/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 63
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient4/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient4/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 63.
+187 of 228 steps (82%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient5/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient5/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 51
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient5/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient5/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 51.
+188 of 228 steps (82%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient6/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient6/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 27
+    wildcards: project=example, patient=patient6, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient6/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient6/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 27.
+189 of 228 steps (83%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient3/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient3/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 79
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient3/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient3/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 79.
+190 of 228 steps (83%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient1/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient1/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 52
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient1/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient1/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 52.
+191 of 228 steps (84%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient16/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient16/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 74
+    wildcards: project=example, patient=patient16, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient16/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient16/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 74.
+192 of 228 steps (84%) done
+
+rule hrd_scores:
+    input: data/example/patients/patient1/sample1/segments.tsv
+    output: output/example/patients/patient1/sample1/hrd_scores/hrd_score.tsv
+    jobid: 55
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient1/sample1/segments.tsv -o output/example/patients/patient1/sample1/hrd_scores/hrd_score.tsv --genome hg38 --hrdtools=git/hrdtools
+Finished job 55.
+193 of 228 steps (85%) done
+
+rule hrd_scores:
+    input: data/example/patients/patient11/sample1/segments.tsv
+    output: output/example/patients/patient11/sample1/hrd_scores/hrd_score.tsv
+    jobid: 42
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient11/sample1/segments.tsv -o output/example/patients/patient11/sample1/hrd_scores/hrd_score.tsv --genome hg38 --hrdtools=git/hrdtools
+Finished job 42.
+194 of 228 steps (85%) done
+
+rule hrd_scores:
+    input: data/example/patients/patient15/sample1/segments.tsv
+    output: output/example/patients/patient15/sample1/hrd_scores/hrd_score.tsv
+    jobid: 21
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient15/sample1/segments.tsv -o output/example/patients/patient15/sample1/hrd_scores/hrd_score.tsv --genome hg38 --hrdtools=git/hrdtools
+Error in rule hrd_scores:
+    jobid: 21
+    output: output/example/patients/patient15/sample1/hrd_scores/hrd_score.tsv
+
+RuleException:
+CalledProcessError in line 204 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient15/sample1/segments.tsv -o output/example/patients/patient15/sample1/hrd_scores/hrd_score.tsv --genome hg38 --hrdtools=git/hrdtools ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 204, in __rule_hrd_scores
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-02-28T001928.901465.snakemake.log

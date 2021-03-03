@@ -1,0 +1,3 @@
+MissingInputException in line 230 of /home/chris/hrdetect-pipeline/Snakefile:
+Missing input files for rule hrdetect_component_paths:
+output/example/patients/patient6/sample1/hrdetect_components.tsv

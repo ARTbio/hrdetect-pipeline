@@ -1,0 +1,280 @@
+data/fanconi
+└── patients
+    ├── patient1
+    │   └── 017
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient10
+    │   └── 248
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient11
+    │   └── 290
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient12
+    │   └── 319
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient13
+    │   └── 322
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient14
+    │   └── 331
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient15
+    │   └── 340
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient16
+    │   └── 365
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient17
+    │   └── PAMXZY
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient18
+    │   └── PAMYMA
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient19
+    │   └── PANVPB
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient2
+    │   └── 002
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient20
+    │   └── PANZLR
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient21
+    │   └── PARBTV
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient22
+    │   └── PARHRS
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient23
+    │   └── PARLSL
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient24
+    │   └── PARNAW
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient25
+    │   └── PARXYR
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient26
+    │   └── PARZIA
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient27
+    │   └── PASDKZ
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient28
+    │   └── PASDXR
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient29
+    │   └── PASFHK
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient3
+    │   └── 037
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient30
+    │   └── PASFJJ
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient31
+    │   └── PASFLG
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient32
+    │   └── PASIGA
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient33
+    │   └── PASLZE
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient34
+    │   └── PASNKZ
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient35
+    │   └── PASSLT
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient36
+    │   └── PASTZK
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient37
+    │   └── PASVJS
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient38
+    │   └── PASYEJ
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient39
+    │   └── PASYWA
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient4
+    │   └── 089
+    │       ├── segments.tabular
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient40
+    │   └── PATAIJ
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient41
+    │   └── PATHIU
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient42
+    │   └── PATISD
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient43
+    │   └── PATJMY
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient44
+    │   └── PATKBK
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient45
+    │   └── PATKKJ
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient46
+    │   └── PATKWH
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient5
+    │   └── 167
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient6
+    │   └── 171
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient7
+    │   └── 184
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    ├── patient8
+    │   └── 208
+    │       ├── segments.tsv
+    │       ├── somatic_indels.vcf
+    │       ├── somatic_snvs.vcf
+    │       └── somatic_sv.tsv
+    └── patient9
+        └── 209
+            ├── segments.tsv
+            ├── somatic_indels.vcf
+            ├── somatic_snvs.vcf
+            └── somatic_sv.tsv
+
+93 directories, 184 files

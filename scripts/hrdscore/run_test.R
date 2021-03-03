@@ -57,6 +57,9 @@ print('done')
 
 print('Running HRDtools test')
 
+# chris
+library(GenomicRanges)
+
 loh_ranges <- read_tsv(args[['loh']]) %>% as.data.frame %>% GRanges
 
 run_test(

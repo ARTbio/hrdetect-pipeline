@@ -21,9 +21,9 @@ def replace_newlines(input_string):
 
 target_functions = {}
 
-include: "projects/example.smk"
-include: "projects/compass.smk"
-include: "projects/pog.smk"
+include: "projects/example.fanconi.smk"
+# include: "projects/compass.smk"
+# include: "projects/pog.smk"
 
 #######################
 ### Loading Targets ###
@@ -87,7 +87,7 @@ rule mutation_catalogs:
     output:
         'output/{project}/patients/{patient}/{sample}/snv_signatures/mutation_catalog.tsv',
     shell:
-        'Rscript scripts/signatures/get_mutation_catalog.R -v {input} -c {output} --ref hg19'
+        'Rscript scripts/signatures/get_mutation_catalog.R -v {input} -c {output} --ref hg19'  # GRCh38
 
 rule snv_signatures_signit_exposures:
     input:
@@ -201,7 +201,7 @@ rule hrd_scores:
     output:
         'output/{project}/patients/{patient}/{sample}/hrd_scores/hrd_score.tsv'
     shell:
-        'Rscript scripts/hrdscore/run_test.R -l {input} -o {output} --genome hg19 --hrdtools=' + HRDTOOLS_PATH
+        'Rscript scripts/hrdscore/run_test.R -l {input} -o {output} --genome hg19 --hrdtools=' + HRDTOOLS_PATH  # GRCh38
 
 #######################
 ### HRDetect Scores ###

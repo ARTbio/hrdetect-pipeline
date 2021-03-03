@@ -132,6 +132,7 @@ microhomology_summary <- function(indel_table) {
 }
 
 hg19 <- getBSgenome('BSgenome.Hsapiens.UCSC.hg19')
+#hg19 <- getBSgenome('BSgenome.Hsapiens.UCSC.hg38')
 
 indel_flanked <- get_flanking_sequence(args[['vcf']]) %>% microhomology_summary()
 write_tsv(indel_flanked, path = args[['output']])

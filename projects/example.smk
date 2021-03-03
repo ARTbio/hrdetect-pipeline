@@ -72,6 +72,7 @@ rule example_segments:
             input[0],
             sep='\t',
             names=['chr', 'start', 'end', 'width', 'nvar', 'copy_number', 'lohtype', 'major_allele', 'minor_allele']
+            # names=['chr', 'start', 'end', 'width', 'copy_number', 'lohtype']
         )
         data.to_csv(output[0], sep='\t', index=False)
 

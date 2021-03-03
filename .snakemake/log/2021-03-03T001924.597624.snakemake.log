@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	46	combine_scores
+	46	example_segments
+	46	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	13	indel_annotation
+	46	microhomology_calculation
+	46	snv_signatures_signit_exposures
+	46	snv_signatures_signit_summary
+	46	sv_signatures_signit_exposures
+	46	sv_signatures_signit_summary
+	385
+
+rule indel_annotation:
+    input: data/example/patients/patient8/sample1/somatic_indels.vcf
+    output: output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 266
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient8/sample1/somatic_indels.vcf -o output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+Error in rule indel_annotation:
+    jobid: 266
+    output: output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv
+
+RuleException:
+CalledProcessError in line 184 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient8/sample1/somatic_indels.vcf -o output/example/patients/patient8/sample1/indel_microhomology/indels_annotated.tsv ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 184, in __rule_indel_annotation
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-03-03T001924.597624.snakemake.log

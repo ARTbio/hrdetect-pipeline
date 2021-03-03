@@ -71,7 +71,8 @@ print(mutations %>% as_tibble)
 
 if (!is.null(args[['ref']])) {
     if (args[['ref']] == 'GRCh38') {
-        library(BSgenome.Hsapiens.NCBI.GRCh38)
+        # library(BSgenome.Hsapiens.NCBI.GRCh38)
+        library(BSgenome.Hsapiens.UCSC.hg38)
 
         catalog <- mut.to.sigs.input(mut.ref = mutations,
                                     sample.id = 'sample',
@@ -79,7 +80,8 @@ if (!is.null(args[['ref']])) {
                                     pos = 'pos',
                                     ref = 'ref',
                                     alt = 'alt',
-                                    bsg = BSgenome.Hsapiens.NCBI.GRCh38)
+                                    bsg = BSgenome.Hsapiens.UCSC.hg38)
+                                    # bsg = BSgenome.Hsapiens.NCBI.GRCh38)
     } else {
         catalog <- mut.to.sigs.input(mut.ref = mutations,
                                     sample.id = 'sample',
