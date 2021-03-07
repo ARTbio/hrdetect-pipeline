@@ -1,0 +1,364 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	16	combine_scores
+	16	example_indels
+	16	example_segments
+	16	example_snvs
+	16	example_sv
+	16	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	16	indel_annotation
+	16	microhomology_calculation
+	16	mutation_catalogs
+	16	snv_signatures_signit_exposures
+	16	snv_signatures_signit_summary
+	16	sv_catalogs
+	16	sv_signatures_signit_exposures
+	16	sv_signatures_signit_summary
+	228
+
+rule example_snvs:
+    input: examples/example/patient14/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient14/sample1/somatic_snvs.vcf
+    jobid: 634
+    wildcards: patient=patient14, sample=sample1
+
+cp -f examples/example/patient14/sample1/somatic_snvs.vcf data/example/patients/patient14/sample1/somatic_snvs.vcf
+Finished job 634.
+1 of 228 steps (0.44%) done
+
+rule example_snvs:
+    input: examples/example/patient11/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient11/sample1/somatic_snvs.vcf
+    jobid: 645
+    wildcards: patient=patient11, sample=sample1
+
+cp -f examples/example/patient11/sample1/somatic_snvs.vcf data/example/patients/patient11/sample1/somatic_snvs.vcf
+Finished job 645.
+2 of 228 steps (0.88%) done
+
+rule example_snvs:
+    input: examples/example/patient10/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient10/sample1/somatic_snvs.vcf
+    jobid: 578
+    wildcards: patient=patient10, sample=sample1
+
+cp -f examples/example/patient10/sample1/somatic_snvs.vcf data/example/patients/patient10/sample1/somatic_snvs.vcf
+Finished job 578.
+3 of 228 steps (1%) done
+
+rule example_snvs:
+    input: examples/example/patient15/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient15/sample1/somatic_snvs.vcf
+    jobid: 602
+    wildcards: patient=patient15, sample=sample1
+
+cp -f examples/example/patient15/sample1/somatic_snvs.vcf data/example/patients/patient15/sample1/somatic_snvs.vcf
+Finished job 602.
+4 of 228 steps (2%) done
+
+rule example_snvs:
+    input: examples/example/patient13/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient13/sample1/somatic_snvs.vcf
+    jobid: 607
+    wildcards: patient=patient13, sample=sample1
+
+cp -f examples/example/patient13/sample1/somatic_snvs.vcf data/example/patients/patient13/sample1/somatic_snvs.vcf
+Finished job 607.
+5 of 228 steps (2%) done
+
+rule example_snvs:
+    input: examples/example/patient9/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient9/sample1/somatic_snvs.vcf
+    jobid: 627
+    wildcards: patient=patient9, sample=sample1
+
+cp -f examples/example/patient9/sample1/somatic_snvs.vcf data/example/patients/patient9/sample1/somatic_snvs.vcf
+Finished job 627.
+6 of 228 steps (3%) done
+
+rule example_snvs:
+    input: examples/example/patient8/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient8/sample1/somatic_snvs.vcf
+    jobid: 642
+    wildcards: patient=patient8, sample=sample1
+
+cp -f examples/example/patient8/sample1/somatic_snvs.vcf data/example/patients/patient8/sample1/somatic_snvs.vcf
+Finished job 642.
+7 of 228 steps (3%) done
+
+rule example_snvs:
+    input: examples/example/patient2/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient2/sample1/somatic_snvs.vcf
+    jobid: 586
+    wildcards: patient=patient2, sample=sample1
+
+cp -f examples/example/patient2/sample1/somatic_snvs.vcf data/example/patients/patient2/sample1/somatic_snvs.vcf
+Finished job 586.
+8 of 228 steps (4%) done
+
+rule example_snvs:
+    input: examples/example/patient7/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient7/sample1/somatic_snvs.vcf
+    jobid: 625
+    wildcards: patient=patient7, sample=sample1
+
+cp -f examples/example/patient7/sample1/somatic_snvs.vcf data/example/patients/patient7/sample1/somatic_snvs.vcf
+Finished job 625.
+9 of 228 steps (4%) done
+
+rule example_snvs:
+    input: examples/example/patient1/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient1/sample1/somatic_snvs.vcf
+    jobid: 599
+    wildcards: patient=patient1, sample=sample1
+
+cp -f examples/example/patient1/sample1/somatic_snvs.vcf data/example/patients/patient1/sample1/somatic_snvs.vcf
+Finished job 599.
+10 of 228 steps (4%) done
+
+rule example_snvs:
+    input: examples/example/patient5/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient5/sample1/somatic_snvs.vcf
+    jobid: 638
+    wildcards: patient=patient5, sample=sample1
+
+cp -f examples/example/patient5/sample1/somatic_snvs.vcf data/example/patients/patient5/sample1/somatic_snvs.vcf
+Finished job 638.
+11 of 228 steps (5%) done
+
+rule example_snvs:
+    input: examples/example/patient4/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient4/sample1/somatic_snvs.vcf
+    jobid: 580
+    wildcards: patient=patient4, sample=sample1
+
+cp -f examples/example/patient4/sample1/somatic_snvs.vcf data/example/patients/patient4/sample1/somatic_snvs.vcf
+Finished job 580.
+12 of 228 steps (5%) done
+
+rule example_snvs:
+    input: examples/example/patient3/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient3/sample1/somatic_snvs.vcf
+    jobid: 604
+    wildcards: patient=patient3, sample=sample1
+
+cp -f examples/example/patient3/sample1/somatic_snvs.vcf data/example/patients/patient3/sample1/somatic_snvs.vcf
+Finished job 604.
+13 of 228 steps (6%) done
+
+rule example_snvs:
+    input: examples/example/patient12/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient12/sample1/somatic_snvs.vcf
+    jobid: 618
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_snvs.vcf data/example/patients/patient12/sample1/somatic_snvs.vcf
+Finished job 618.
+14 of 228 steps (6%) done
+
+rule example_snvs:
+    input: examples/example/patient6/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient6/sample1/somatic_snvs.vcf
+    jobid: 631
+    wildcards: patient=patient6, sample=sample1
+
+cp -f examples/example/patient6/sample1/somatic_snvs.vcf data/example/patients/patient6/sample1/somatic_snvs.vcf
+Finished job 631.
+15 of 228 steps (7%) done
+
+rule example_snvs:
+    input: examples/example/patient16/sample1/somatic_snvs.vcf
+    output: data/example/patients/patient16/sample1/somatic_snvs.vcf
+    jobid: 610
+    wildcards: patient=patient16, sample=sample1
+
+cp -f examples/example/patient16/sample1/somatic_snvs.vcf data/example/patients/patient16/sample1/somatic_snvs.vcf
+Finished job 610.
+16 of 228 steps (7%) done
+
+rule example_sv:
+    input: examples/example/patient11/sample1/somatic_sv.tsv
+    output: data/example/patients/patient11/sample1/somatic_sv.tsv
+    jobid: 644
+    wildcards: patient=patient11, sample=sample1
+
+cp -f examples/example/patient11/sample1/somatic_sv.tsv data/example/patients/patient11/sample1/somatic_sv.tsv
+Finished job 644.
+17 of 228 steps (7%) done
+
+rule example_sv:
+    input: examples/example/patient13/sample1/somatic_sv.tsv
+    output: data/example/patients/patient13/sample1/somatic_sv.tsv
+    jobid: 606
+    wildcards: patient=patient13, sample=sample1
+
+cp -f examples/example/patient13/sample1/somatic_sv.tsv data/example/patients/patient13/sample1/somatic_sv.tsv
+Finished job 606.
+18 of 228 steps (8%) done
+
+rule example_sv:
+    input: examples/example/patient14/sample1/somatic_sv.tsv
+    output: data/example/patients/patient14/sample1/somatic_sv.tsv
+    jobid: 635
+    wildcards: patient=patient14, sample=sample1
+
+cp -f examples/example/patient14/sample1/somatic_sv.tsv data/example/patients/patient14/sample1/somatic_sv.tsv
+Finished job 635.
+19 of 228 steps (8%) done
+
+rule example_sv:
+    input: examples/example/patient4/sample1/somatic_sv.tsv
+    output: data/example/patients/patient4/sample1/somatic_sv.tsv
+    jobid: 581
+    wildcards: patient=patient4, sample=sample1
+
+cp -f examples/example/patient4/sample1/somatic_sv.tsv data/example/patients/patient4/sample1/somatic_sv.tsv
+Finished job 581.
+20 of 228 steps (9%) done
+
+rule example_sv:
+    input: examples/example/patient10/sample1/somatic_sv.tsv
+    output: data/example/patients/patient10/sample1/somatic_sv.tsv
+    jobid: 579
+    wildcards: patient=patient10, sample=sample1
+
+cp -f examples/example/patient10/sample1/somatic_sv.tsv data/example/patients/patient10/sample1/somatic_sv.tsv
+Finished job 579.
+21 of 228 steps (9%) done
+
+rule example_sv:
+    input: examples/example/patient8/sample1/somatic_sv.tsv
+    output: data/example/patients/patient8/sample1/somatic_sv.tsv
+    jobid: 643
+    wildcards: patient=patient8, sample=sample1
+
+cp -f examples/example/patient8/sample1/somatic_sv.tsv data/example/patients/patient8/sample1/somatic_sv.tsv
+Finished job 643.
+22 of 228 steps (10%) done
+
+rule example_sv:
+    input: examples/example/patient15/sample1/somatic_sv.tsv
+    output: data/example/patients/patient15/sample1/somatic_sv.tsv
+    jobid: 603
+    wildcards: patient=patient15, sample=sample1
+
+cp -f examples/example/patient15/sample1/somatic_sv.tsv data/example/patients/patient15/sample1/somatic_sv.tsv
+Finished job 603.
+23 of 228 steps (10%) done
+
+rule example_sv:
+    input: examples/example/patient1/sample1/somatic_sv.tsv
+    output: data/example/patients/patient1/sample1/somatic_sv.tsv
+    jobid: 598
+    wildcards: patient=patient1, sample=sample1
+
+cp -f examples/example/patient1/sample1/somatic_sv.tsv data/example/patients/patient1/sample1/somatic_sv.tsv
+Finished job 598.
+24 of 228 steps (11%) done
+
+rule example_sv:
+    input: examples/example/patient7/sample1/somatic_sv.tsv
+    output: data/example/patients/patient7/sample1/somatic_sv.tsv
+    jobid: 624
+    wildcards: patient=patient7, sample=sample1
+
+cp -f examples/example/patient7/sample1/somatic_sv.tsv data/example/patients/patient7/sample1/somatic_sv.tsv
+Finished job 624.
+25 of 228 steps (11%) done
+
+rule example_sv:
+    input: examples/example/patient2/sample1/somatic_sv.tsv
+    output: data/example/patients/patient2/sample1/somatic_sv.tsv
+    jobid: 587
+    wildcards: patient=patient2, sample=sample1
+
+cp -f examples/example/patient2/sample1/somatic_sv.tsv data/example/patients/patient2/sample1/somatic_sv.tsv
+Finished job 587.
+26 of 228 steps (11%) done
+
+rule example_sv:
+    input: examples/example/patient12/sample1/somatic_sv.tsv
+    output: data/example/patients/patient12/sample1/somatic_sv.tsv
+    jobid: 619
+    wildcards: patient=patient12, sample=sample1
+
+cp -f examples/example/patient12/sample1/somatic_sv.tsv data/example/patients/patient12/sample1/somatic_sv.tsv
+Finished job 619.
+27 of 228 steps (12%) done
+
+rule example_sv:
+    input: examples/example/patient5/sample1/somatic_sv.tsv
+    output: data/example/patients/patient5/sample1/somatic_sv.tsv
+    jobid: 639
+    wildcards: patient=patient5, sample=sample1
+
+cp -f examples/example/patient5/sample1/somatic_sv.tsv data/example/patients/patient5/sample1/somatic_sv.tsv
+Finished job 639.
+28 of 228 steps (12%) done
+
+rule example_sv:
+    input: examples/example/patient6/sample1/somatic_sv.tsv
+    output: data/example/patients/patient6/sample1/somatic_sv.tsv
+    jobid: 630
+    wildcards: patient=patient6, sample=sample1
+
+cp -f examples/example/patient6/sample1/somatic_sv.tsv data/example/patients/patient6/sample1/somatic_sv.tsv
+Finished job 630.
+29 of 228 steps (13%) done
+
+rule example_sv:
+    input: examples/example/patient9/sample1/somatic_sv.tsv
+    output: data/example/patients/patient9/sample1/somatic_sv.tsv
+    jobid: 626
+    wildcards: patient=patient9, sample=sample1
+
+cp -f examples/example/patient9/sample1/somatic_sv.tsv data/example/patients/patient9/sample1/somatic_sv.tsv
+Finished job 626.
+30 of 228 steps (13%) done
+
+rule example_sv:
+    input: examples/example/patient3/sample1/somatic_sv.tsv
+    output: data/example/patients/patient3/sample1/somatic_sv.tsv
+    jobid: 605
+    wildcards: patient=patient3, sample=sample1
+
+cp -f examples/example/patient3/sample1/somatic_sv.tsv data/example/patients/patient3/sample1/somatic_sv.tsv
+Finished job 605.
+31 of 228 steps (14%) done
+
+rule example_sv:
+    input: examples/example/patient16/sample1/somatic_sv.tsv
+    output: data/example/patients/patient16/sample1/somatic_sv.tsv
+    jobid: 611
+    wildcards: patient=patient16, sample=sample1
+
+cp -f examples/example/patient16/sample1/somatic_sv.tsv data/example/patients/patient16/sample1/somatic_sv.tsv
+Finished job 611.
+32 of 228 steps (14%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient14/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 535
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient14/sample1/somatic_snvs.vcf -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Error in rule mutation_catalogs:
+    jobid: 535
+    output: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+
+RuleException:
+CalledProcessError in line 90 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient14/sample1/somatic_snvs.vcf -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv --ref hg19 ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 90, in __rule_mutation_catalogs
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-03-06T175019.170668.snakemake.log

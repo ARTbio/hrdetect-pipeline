@@ -1,51 +1,51 @@
 paths	patient	sample	signature	value
-output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	HRD score	12
-output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Signature 3	289.3359939686545
-output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Signature 8	126.22148315716399
-output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Rearrangement Signature 3	16.46148361141232
-output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Rearrangement Signature 5	54.538605851770676
+output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	HRD score	14
+output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Signature 3	287.80530244525403
+output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Signature 8	123.9471978145381
+output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Rearrangement Signature 3	23.881361800674476
+output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Rearrangement Signature 5	79.7973785568885
 output/example/patients/patient1/sample1/hrdetect_components.tsv	patient1	sample1	Deletion Microhomology Proportion	0.3559870550161812
-output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	HRD score	18
-output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Signature 3	878.952008553977
-output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Signature 8	90.30478236325871
-output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Rearrangement Signature 3	14.956198003619777
-output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Rearrangement Signature 5	75.97764767631863
+output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	HRD score	26
+output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Signature 3	872.72394986669
+output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Signature 8	92.41697434256545
+output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Rearrangement Signature 3	29.696395336663297
+output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Rearrangement Signature 5	58.2084273742026
 output/example/patients/patient10/sample1/hrdetect_components.tsv	patient10	sample1	Deletion Microhomology Proportion	0.32514619883040935
-output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	HRD score	10
-output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Signature 3	1372.3378738677147
-output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Signature 8	41.579442221419455
-output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Rearrangement Signature 3	11.50589145918133
-output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Rearrangement Signature 5	58.90159332340802
+output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	HRD score	13
+output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Signature 3	1369.954128127844
+output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Signature 8	41.98501196709722
+output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Rearrangement Signature 3	32.91511774601134
+output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Rearrangement Signature 5	109.51208729478049
 output/example/patients/patient11/sample1/hrdetect_components.tsv	patient11	sample1	Deletion Microhomology Proportion	0.307752545027408
-output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	HRD score	4
-output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Signature 3	165.29259536968874
-output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Signature 8	120.82627633012744
-output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Rearrangement Signature 3	19.043713498904527
-output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Rearrangement Signature 5	39.632529087351884
+output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	HRD score	12
+output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Signature 3	166.66962505474336
+output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Signature 8	122.4393463154181
+output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Rearrangement Signature 3	15.439442731959604
+output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Rearrangement Signature 5	59.27781435459796
 output/example/patients/patient12/sample1/hrdetect_components.tsv	patient12	sample1	Deletion Microhomology Proportion	0.34765625
-output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	HRD score	4
-output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Signature 3	297.7255320521603
-output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Signature 8	150.6206515570656
-output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Rearrangement Signature 3	20.048410322662843
-output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Rearrangement Signature 5	61.71016836380619
+output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	HRD score	9
+output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Signature 3	297.4635933145111
+output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Signature 8	155.91170958155402
+output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Rearrangement Signature 3	22.332055120602767
+output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Rearrangement Signature 5	67.61328029435944
 output/example/patients/patient13/sample1/hrdetect_components.tsv	patient13	sample1	Deletion Microhomology Proportion	0.3415559772296015
-output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	HRD score	9
-output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Signature 3	1199.0743090870667
-output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Signature 8	716.5914024091752
-output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Rearrangement Signature 3	16.97034512061889
-output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Rearrangement Signature 5	40.426589052933984
+output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	HRD score	19
+output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Signature 3	1202.9723482797724
+output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Signature 8	714.2247496462265
+output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Rearrangement Signature 3	28.27645889284339
+output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Rearrangement Signature 5	69.73875378594346
 output/example/patients/patient14/sample1/hrdetect_components.tsv	patient14	sample1	Deletion Microhomology Proportion	0.31297709923664124
-output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	HRD score	10
-output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Signature 3	242.9399148186127
-output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Signature 8	137.81209649975202
-output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Rearrangement Signature 3	22.614518552252363
-output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Rearrangement Signature 5	80.9907431417824
+output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	HRD score	11
+output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Signature 3	247.0619744832248
+output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Signature 8	142.9396311744105
+output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Rearrangement Signature 3	25.489084748598394
+output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Rearrangement Signature 5	69.81243924305548
 output/example/patients/patient15/sample1/hrdetect_components.tsv	patient15	sample1	Deletion Microhomology Proportion	0.33525456292026895
-output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	HRD score	2
-output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Signature 3	136.99608154509866
-output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Signature 8	58.14217130369644
-output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Rearrangement Signature 3	24.112935337755495
-output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Rearrangement Signature 5	80.03557763492589
+output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	HRD score	3
+output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Signature 3	140.59638219753157
+output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Signature 8	56.92885780865993
+output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Rearrangement Signature 3	16.75033987561021
+output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Rearrangement Signature 5	54.45661086017786
 output/example/patients/patient16/sample1/hrdetect_components.tsv	patient16	sample1	Deletion Microhomology Proportion	0.34317343173431736
 output/example/patients/patient17/sample1/hrdetect_components.tsv	patient17	sample1	HRD score	0
 output/example/patients/patient17/sample1/hrdetect_components.tsv	patient17	sample1	Signature 3	357.97963161346536
@@ -65,11 +65,11 @@ output/example/patients/patient19/sample1/hrdetect_components.tsv	patient19	samp
 output/example/patients/patient19/sample1/hrdetect_components.tsv	patient19	sample1	Rearrangement Signature 3	8.327641051400166
 output/example/patients/patient19/sample1/hrdetect_components.tsv	patient19	sample1	Rearrangement Signature 5	49.805298935997776
 output/example/patients/patient19/sample1/hrdetect_components.tsv	patient19	sample1	Deletion Microhomology Proportion	0.17249417249417248
-output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	HRD score	4
-output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Signature 3	262.4161026325773
-output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Signature 8	154.50503059692178
-output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Rearrangement Signature 3	25.26514934836795
-output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Rearrangement Signature 5	71.12317561620321
+output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	HRD score	11
+output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Signature 3	260.398662157929
+output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Signature 8	159.5670893257062
+output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Rearrangement Signature 3	22.543392375570548
+output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Rearrangement Signature 5	81.91218697640213
 output/example/patients/patient2/sample1/hrdetect_components.tsv	patient2	sample1	Deletion Microhomology Proportion	0.30313293818797626
 output/example/patients/patient20/sample1/hrdetect_components.tsv	patient20	sample1	HRD score	4
 output/example/patients/patient20/sample1/hrdetect_components.tsv	patient20	sample1	Signature 3	69.65774562061624
@@ -131,11 +131,11 @@ output/example/patients/patient29/sample1/hrdetect_components.tsv	patient29	samp
 output/example/patients/patient29/sample1/hrdetect_components.tsv	patient29	sample1	Rearrangement Signature 3	7.372948279482292
 output/example/patients/patient29/sample1/hrdetect_components.tsv	patient29	sample1	Rearrangement Signature 5	41.00056585784715
 output/example/patients/patient29/sample1/hrdetect_components.tsv	patient29	sample1	Deletion Microhomology Proportion	0.19479606188466947
-output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	HRD score	3
-output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Signature 3	292.59511146070116
-output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Signature 8	142.03964181994556
-output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Rearrangement Signature 3	28.496195208607368
-output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Rearrangement Signature 5	68.90799143941254
+output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	HRD score	5
+output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Signature 3	285.6434968847204
+output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Signature 8	143.90471513236048
+output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Rearrangement Signature 3	17.26274136005253
+output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Rearrangement Signature 5	40.94884158749966
 output/example/patients/patient3/sample1/hrdetect_components.tsv	patient3	sample1	Deletion Microhomology Proportion	0.3359497645211931
 output/example/patients/patient30/sample1/hrdetect_components.tsv	patient30	sample1	HRD score	5
 output/example/patients/patient30/sample1/hrdetect_components.tsv	patient30	sample1	Signature 3	300.49028826509334
@@ -197,11 +197,11 @@ output/example/patients/patient39/sample1/hrdetect_components.tsv	patient39	samp
 output/example/patients/patient39/sample1/hrdetect_components.tsv	patient39	sample1	Rearrangement Signature 3	1.4337233185480602
 output/example/patients/patient39/sample1/hrdetect_components.tsv	patient39	sample1	Rearrangement Signature 5	62.961246267946855
 output/example/patients/patient39/sample1/hrdetect_components.tsv	patient39	sample1	Deletion Microhomology Proportion	0.14237216210481646
-output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	HRD score	9
-output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Signature 3	206.72473724932456
-output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Signature 8	109.83275259220824
-output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Rearrangement Signature 3	22.540458222740785
-output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Rearrangement Signature 5	67.91180088997847
+output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	HRD score	14
+output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Signature 3	215.09904505745044
+output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Signature 8	103.44813838778762
+output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Rearrangement Signature 3	20.45340946602919
+output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Rearrangement Signature 5	61.24440294325644
 output/example/patients/patient4/sample1/hrdetect_components.tsv	patient4	sample1	Deletion Microhomology Proportion	0.3558201058201058
 output/example/patients/patient40/sample1/hrdetect_components.tsv	patient40	sample1	HRD score	5
 output/example/patients/patient40/sample1/hrdetect_components.tsv	patient40	sample1	Signature 3	134.94507573123272
@@ -245,33 +245,33 @@ output/example/patients/patient46/sample1/hrdetect_components.tsv	patient46	samp
 output/example/patients/patient46/sample1/hrdetect_components.tsv	patient46	sample1	Rearrangement Signature 3	2.3405589868164043
 output/example/patients/patient46/sample1/hrdetect_components.tsv	patient46	sample1	Rearrangement Signature 5	44.761896550334455
 output/example/patients/patient46/sample1/hrdetect_components.tsv	patient46	sample1	Deletion Microhomology Proportion	0.15609452736318408
-output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	HRD score	7
-output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Signature 3	207.92047187360959
-output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Signature 8	111.6245550542146
-output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Rearrangement Signature 3	14.893303437137373
-output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Rearrangement Signature 5	58.90975499880576
+output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	HRD score	9
+output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Signature 3	211.80169638965114
+output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Signature 8	108.78826153154391
+output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Rearrangement Signature 3	18.926807772073907
+output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Rearrangement Signature 5	40.32038742194658
 output/example/patients/patient5/sample1/hrdetect_components.tsv	patient5	sample1	Deletion Microhomology Proportion	0.2952243125904486
-output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	HRD score	2
-output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Signature 3	312.98778180482094
-output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Signature 8	114.0970424342799
-output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Rearrangement Signature 3	33.032346340825285
-output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Rearrangement Signature 5	108.82517630978441
+output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	HRD score	4
+output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Signature 3	314.4377209699004
+output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Signature 8	112.62563380931718
+output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Rearrangement Signature 3	11.609920182675756
+output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Rearrangement Signature 5	58.37295859290833
 output/example/patients/patient6/sample1/hrdetect_components.tsv	patient6	sample1	Deletion Microhomology Proportion	0.3158682634730539
-output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	HRD score	5
-output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Signature 3	312.64587746075455
-output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Signature 8	64.08242772977208
-output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Rearrangement Signature 3	29.318288277057917
-output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Rearrangement Signature 5	58.448664943376826
+output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	HRD score	9
+output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Signature 3	324.14916009557163
+output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Signature 8	63.243183454993115
+output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Rearrangement Signature 3	15.099820506832456
+output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Rearrangement Signature 5	76.40863059703652
 output/example/patients/patient7/sample1/hrdetect_components.tsv	patient7	sample1	Deletion Microhomology Proportion	0.36077235772357724
-output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	HRD score	6
-output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Signature 3	539.8845200504938
-output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Signature 8	30.70738447969464
-output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Rearrangement Signature 3	23.377331328395528
-output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Rearrangement Signature 5	77.01598063923987
+output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	HRD score	9
+output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Signature 3	605.8845525013971
+output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Signature 8	233.16124146081688
+output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Rearrangement Signature 3	24.108937024966796
+output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Rearrangement Signature 5	81.71089971406006
 output/example/patients/patient8/sample1/hrdetect_components.tsv	patient8	sample1	Deletion Microhomology Proportion	0.3157894736842105
-output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	HRD score	18
-output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Signature 3	625.6146018554823
-output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Signature 8	314.58027959777706
-output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Rearrangement Signature 3	23.925733863188437
-output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Rearrangement Signature 5	82.48909736459572
+output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	HRD score	30
+output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Signature 3	622.2192350466494
+output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Signature 8	317.6007663500178
+output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Rearrangement Signature 3	20.394504891787516
+output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Rearrangement Signature 5	59.87218551107768
 output/example/patients/patient9/sample1/hrdetect_components.tsv	patient9	sample1	Deletion Microhomology Proportion	0.349009900990099

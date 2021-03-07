@@ -1,0 +1,178 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	1	combine_scores
+	1	example_indels
+	1	example_segments
+	1	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	1	indel_annotation
+	1	microhomology_calculation
+	1	mutation_catalogs
+	1	snv_signatures_signit_exposures
+	1	snv_signatures_signit_summary
+	1	sv_catalogs
+	1	sv_signatures_signit_exposures
+	1	sv_signatures_signit_summary
+	16
+
+rule mutation_catalogs:
+    input: data/example/patients/patient14/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 431
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient14/sample1/somatic_snvs.vcf -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 431.
+1 of 16 steps (6%) done
+
+rule example_indels:
+    input: examples/example/patient14/sample1/somatic_indels.vcf
+    output: data/example/patients/patient14/sample1/somatic_indels.vcf
+    jobid: 430
+    wildcards: patient=patient14, sample=sample1
+
+cp -f examples/example/patient14/sample1/somatic_indels.vcf data/example/patients/patient14/sample1/somatic_indels.vcf
+Finished job 430.
+2 of 16 steps (12%) done
+
+rule sv_catalogs:
+    input: data/example/patients/patient14/sample1/somatic_sv.tsv
+    output: output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+    jobid: 432
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/sv/calculate_sv_catalog.R -i data/example/patients/patient14/sample1/somatic_sv.tsv -o output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+Finished job 432.
+3 of 16 steps (19%) done
+
+rule indel_annotation:
+    input: data/example/patients/patient14/sample1/somatic_indels.vcf
+    output: output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+    jobid: 250
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/microhomology/flank_indels.R -v data/example/patients/patient14/sample1/somatic_indels.vcf -o output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+Finished job 250.
+4 of 16 steps (25%) done
+
+rule example_segments:
+    input: examples/example/patient14/sample1/segments.tsv
+    output: data/example/patients/patient14/sample1/segments.tsv
+    jobid: 252
+    wildcards: patient=patient14, sample=sample1
+
+Finished job 252.
+5 of 16 steps (31%) done
+
+rule snv_signatures_signit_exposures:
+    input: output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv
+    output: output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds
+    jobid: 251
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient14/sample1/snv_signatures/mutation_catalog.tsv -o output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds -s git/SignIT
+Finished job 251.
+6 of 16 steps (38%) done
+
+rule sv_signatures_signit_exposures:
+    input: output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv
+    output: output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds
+    jobid: 253
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_exposures.R -c output/example/patients/patient14/sample1/sv_signatures/sv_catalog.tsv -o output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds --reference nikzainal_sv_signatures -s git/SignIT
+Finished job 253.
+7 of 16 steps (44%) done
+
+rule snv_signatures_signit_summary:
+    input: output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds
+    output: output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary_fractions.tsv
+    jobid: 67
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/snv_signatures/signit_output.Rds -o output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 67.
+8 of 16 steps (50%) done
+
+rule sv_signatures_signit_summary:
+    input: output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds
+    output: output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv
+    jobid: 69
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary.tsv --signit git/SignIT && Rscript scripts/signatures/signit_summary_table.R -i output/example/patients/patient14/sample1/sv_signatures/sv_signit_output.Rds -o output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary_fractions.tsv --fraction --signit git/SignIT
+Finished job 69.
+9 of 16 steps (56%) done
+
+rule microhomology_calculation:
+    input: output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv
+    output: output/example/patients/patient14/sample1/indel_microhomology/microhomology_scores.tsv
+    jobid: 66
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/microhomology/compute_microhomology_scores.R -i output/example/patients/patient14/sample1/indel_microhomology/indels_annotated.tsv -o output/example/patients/patient14/sample1/indel_microhomology/microhomology_scores.tsv
+Finished job 66.
+10 of 16 steps (62%) done
+
+rule hrd_scores:
+    input: data/example/patients/patient14/sample1/segments.tsv
+    output: output/example/patients/patient14/sample1/hrd_scores/hrd_score.tsv
+    jobid: 68
+    wildcards: project=example, patient=patient14, sample=sample1
+
+Rscript scripts/hrdscore/run_test.R -l data/example/patients/patient14/sample1/segments.tsv -o output/example/patients/patient14/sample1/hrd_scores/hrd_score.tsv --genome hg19 --hrdtools=git/hrdtools
+Finished job 68.
+11 of 16 steps (69%) done
+
+rule combine_scores:
+    input: output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary.tsv, output/example/patients/patient14/sample1/indel_microhomology/microhomology_scores.tsv, output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary.tsv, output/example/patients/patient14/sample1/hrd_scores/hrd_score.tsv
+    output: output/example/patients/patient14/sample1/hrdetect_components.tsv
+    jobid: 8
+    wildcards: project=example, patient=patient14, sample=sample1
+
+ Rscript scripts/hrdetect/aggregate_scores.R -p patient14 -s sample1 --hrd output/example/patients/patient14/sample1/hrd_scores/hrd_score.tsv --snv output/example/patients/patient14/sample1/snv_signatures/signit_exposure_summary.tsv --sv output/example/patients/patient14/sample1/sv_signatures/sv_signit_exposure_summary.tsv --mh output/example/patients/patient14/sample1/indel_microhomology/microhomology_scores.tsv --out output/example/patients/patient14/sample1/hrdetect_components.tsv 
+Finished job 8.
+12 of 16 steps (75%) done
+
+rule hrdetect_component_paths:
+    input: output/example/patients/patient17/sample1/hrdetect_components.tsv, output/example/patients/patient18/sample1/hrdetect_components.tsv, output/example/patients/patient19/sample1/hrdetect_components.tsv, output/example/patients/patient20/sample1/hrdetect_components.tsv, output/example/patients/patient21/sample1/hrdetect_components.tsv, output/example/patients/patient22/sample1/hrdetect_components.tsv, output/example/patients/patient23/sample1/hrdetect_components.tsv, output/example/patients/patient24/sample1/hrdetect_components.tsv, output/example/patients/patient25/sample1/hrdetect_components.tsv, output/example/patients/patient26/sample1/hrdetect_components.tsv, output/example/patients/patient27/sample1/hrdetect_components.tsv, output/example/patients/patient28/sample1/hrdetect_components.tsv, output/example/patients/patient29/sample1/hrdetect_components.tsv, output/example/patients/patient30/sample1/hrdetect_components.tsv, output/example/patients/patient31/sample1/hrdetect_components.tsv, output/example/patients/patient32/sample1/hrdetect_components.tsv, output/example/patients/patient33/sample1/hrdetect_components.tsv, output/example/patients/patient34/sample1/hrdetect_components.tsv, output/example/patients/patient35/sample1/hrdetect_components.tsv, output/example/patients/patient36/sample1/hrdetect_components.tsv, output/example/patients/patient37/sample1/hrdetect_components.tsv, output/example/patients/patient38/sample1/hrdetect_components.tsv, output/example/patients/patient39/sample1/hrdetect_components.tsv, output/example/patients/patient40/sample1/hrdetect_components.tsv, output/example/patients/patient41/sample1/hrdetect_components.tsv, output/example/patients/patient42/sample1/hrdetect_components.tsv, output/example/patients/patient43/sample1/hrdetect_components.tsv, output/example/patients/patient44/sample1/hrdetect_components.tsv, output/example/patients/patient45/sample1/hrdetect_components.tsv, output/example/patients/patient46/sample1/hrdetect_components.tsv, output/example/patients/patient1/sample1/hrdetect_components.tsv, output/example/patients/patient10/sample1/hrdetect_components.tsv, output/example/patients/patient11/sample1/hrdetect_components.tsv, output/example/patients/patient12/sample1/hrdetect_components.tsv, output/example/patients/patient13/sample1/hrdetect_components.tsv, output/example/patients/patient14/sample1/hrdetect_components.tsv, output/example/patients/patient15/sample1/hrdetect_components.tsv, output/example/patients/patient16/sample1/hrdetect_components.tsv, output/example/patients/patient2/sample1/hrdetect_components.tsv, output/example/patients/patient3/sample1/hrdetect_components.tsv, output/example/patients/patient4/sample1/hrdetect_components.tsv, output/example/patients/patient5/sample1/hrdetect_components.tsv, output/example/patients/patient6/sample1/hrdetect_components.tsv, output/example/patients/patient7/sample1/hrdetect_components.tsv, output/example/patients/patient8/sample1/hrdetect_components.tsv, output/example/patients/patient9/sample1/hrdetect_components.tsv
+    output: output/example/cohorts/all/hrdetect/hrdetect_input_table_paths.tsv
+    jobid: 3
+    wildcards: project=example, cohort=all
+
+Finished job 3.
+13 of 16 steps (81%) done
+
+rule aggregate_hrdetect_components:
+    input: output/example/cohorts/all/hrdetect/hrdetect_input_table_paths.tsv
+    output: output/example/cohorts/all/hrdetect/hrdetect_input_table.tsv
+    jobid: 2
+    wildcards: project=example, cohort=all
+
+Rscript scripts/basic-functions/row_bind_tables.R -i output/example/cohorts/all/hrdetect/hrdetect_input_table_paths.tsv -o output/example/cohorts/all/hrdetect/hrdetect_input_table.tsv
+Finished job 2.
+14 of 16 steps (88%) done
+
+rule hrdetect_output_table:
+    input: output/example/cohorts/all/hrdetect/hrdetect_input_table.tsv
+    output: output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+    log: output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+    jobid: 1
+    wildcards: project=example, cohort=all
+
+Rscript scripts/hrdetect/compute_hrdetect.R -i output/example/cohorts/all/hrdetect/hrdetect_input_table.tsv -o output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+Finished job 1.
+15 of 16 steps (94%) done
+
+localrule all:
+    input: output/example/cohorts/all/hrdetect/hrdetect_output_table.tsv
+    jobid: 0
+
+Finished job 0.
+16 of 16 steps (100%) done

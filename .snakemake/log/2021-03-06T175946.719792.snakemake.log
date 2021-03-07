@@ -1,0 +1,242 @@
+Building DAG of jobs...
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_hrdetect_components
+	1	all
+	15	combine_scores
+	15	example_indels
+	15	example_segments
+	15	hrd_scores
+	1	hrdetect_component_paths
+	1	hrdetect_output_table
+	15	indel_annotation
+	15	microhomology_calculation
+	15	mutation_catalogs
+	15	snv_signatures_signit_exposures
+	15	snv_signatures_signit_summary
+	15	sv_catalogs
+	15	sv_signatures_signit_exposures
+	15	sv_signatures_signit_summary
+	184
+
+rule mutation_catalogs:
+    input: data/example/patients/patient11/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient11/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 469
+    wildcards: project=example, patient=patient11, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient11/sample1/somatic_snvs.vcf -c output/example/patients/patient11/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 469.
+1 of 184 steps (0.54%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient10/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient10/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 543
+    wildcards: project=example, patient=patient10, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient10/sample1/somatic_snvs.vcf -c output/example/patients/patient10/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 543.
+2 of 184 steps (1%) done
+
+rule example_indels:
+    input: examples/example/patient11/sample1/somatic_indels.vcf
+    output: data/example/patients/patient11/sample1/somatic_indels.vcf
+    jobid: 470
+    wildcards: patient=patient11, sample=sample1
+
+cp -f examples/example/patient11/sample1/somatic_indels.vcf data/example/patients/patient11/sample1/somatic_indels.vcf
+Finished job 470.
+3 of 184 steps (2%) done
+
+rule example_indels:
+    input: examples/example/patient2/sample1/somatic_indels.vcf
+    output: data/example/patients/patient2/sample1/somatic_indels.vcf
+    jobid: 475
+    wildcards: patient=patient2, sample=sample1
+
+cp -f examples/example/patient2/sample1/somatic_indels.vcf data/example/patients/patient2/sample1/somatic_indels.vcf
+Finished job 475.
+4 of 184 steps (2%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient15/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient15/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 511
+    wildcards: project=example, patient=patient15, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient15/sample1/somatic_snvs.vcf -c output/example/patients/patient15/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 511.
+5 of 184 steps (3%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient13/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient13/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 454
+    wildcards: project=example, patient=patient13, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient13/sample1/somatic_snvs.vcf -c output/example/patients/patient13/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 454.
+6 of 184 steps (3%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient9/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient9/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 420
+    wildcards: project=example, patient=patient9, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient9/sample1/somatic_snvs.vcf -c output/example/patients/patient9/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 420.
+7 of 184 steps (4%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient8/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient8/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 529
+    wildcards: project=example, patient=patient8, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient8/sample1/somatic_snvs.vcf -c output/example/patients/patient8/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 529.
+8 of 184 steps (4%) done
+
+rule example_indels:
+    input: examples/example/patient13/sample1/somatic_indels.vcf
+    output: data/example/patients/patient13/sample1/somatic_indels.vcf
+    jobid: 456
+    wildcards: patient=patient13, sample=sample1
+
+cp -f examples/example/patient13/sample1/somatic_indels.vcf data/example/patients/patient13/sample1/somatic_indels.vcf
+Finished job 456.
+9 of 184 steps (5%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient2/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 476
+    wildcards: project=example, patient=patient2, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient2/sample1/somatic_snvs.vcf -c output/example/patients/patient2/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 476.
+10 of 184 steps (5%) done
+
+rule example_indels:
+    input: examples/example/patient15/sample1/somatic_indels.vcf
+    output: data/example/patients/patient15/sample1/somatic_indels.vcf
+    jobid: 512
+    wildcards: patient=patient15, sample=sample1
+
+cp -f examples/example/patient15/sample1/somatic_indels.vcf data/example/patients/patient15/sample1/somatic_indels.vcf
+Finished job 512.
+11 of 184 steps (6%) done
+
+rule example_indels:
+    input: examples/example/patient7/sample1/somatic_indels.vcf
+    output: data/example/patients/patient7/sample1/somatic_indels.vcf
+    jobid: 415
+    wildcards: patient=patient7, sample=sample1
+
+cp -f examples/example/patient7/sample1/somatic_indels.vcf data/example/patients/patient7/sample1/somatic_indels.vcf
+Finished job 415.
+12 of 184 steps (7%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient7/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient7/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 417
+    wildcards: project=example, patient=patient7, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient7/sample1/somatic_snvs.vcf -c output/example/patients/patient7/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 417.
+13 of 184 steps (7%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient1/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 527
+    wildcards: project=example, patient=patient1, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient1/sample1/somatic_snvs.vcf -c output/example/patients/patient1/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 527.
+14 of 184 steps (8%) done
+
+rule example_indels:
+    input: examples/example/patient8/sample1/somatic_indels.vcf
+    output: data/example/patients/patient8/sample1/somatic_indels.vcf
+    jobid: 531
+    wildcards: patient=patient8, sample=sample1
+
+cp -f examples/example/patient8/sample1/somatic_indels.vcf data/example/patients/patient8/sample1/somatic_indels.vcf
+Finished job 531.
+15 of 184 steps (8%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient5/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient5/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 486
+    wildcards: project=example, patient=patient5, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient5/sample1/somatic_snvs.vcf -c output/example/patients/patient5/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 486.
+16 of 184 steps (9%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient4/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 509
+    wildcards: project=example, patient=patient4, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient4/sample1/somatic_snvs.vcf -c output/example/patients/patient4/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 509.
+17 of 184 steps (9%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient3/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 537
+    wildcards: project=example, patient=patient3, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient3/sample1/somatic_snvs.vcf -c output/example/patients/patient3/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Finished job 537.
+18 of 184 steps (10%) done
+
+rule example_indels:
+    input: examples/example/patient10/sample1/somatic_indels.vcf
+    output: data/example/patients/patient10/sample1/somatic_indels.vcf
+    jobid: 541
+    wildcards: patient=patient10, sample=sample1
+
+cp -f examples/example/patient10/sample1/somatic_indels.vcf data/example/patients/patient10/sample1/somatic_indels.vcf
+Finished job 541.
+19 of 184 steps (10%) done
+
+rule example_indels:
+    input: examples/example/patient9/sample1/somatic_indels.vcf
+    output: data/example/patients/patient9/sample1/somatic_indels.vcf
+    jobid: 418
+    wildcards: patient=patient9, sample=sample1
+
+cp -f examples/example/patient9/sample1/somatic_indels.vcf data/example/patients/patient9/sample1/somatic_indels.vcf
+Finished job 418.
+20 of 184 steps (11%) done
+
+rule mutation_catalogs:
+    input: data/example/patients/patient12/sample1/somatic_snvs.vcf
+    output: output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv
+    jobid: 452
+    wildcards: project=example, patient=patient12, sample=sample1
+
+Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient12/sample1/somatic_snvs.vcf -c output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv --ref hg19
+Error in rule mutation_catalogs:
+    jobid: 452
+    output: output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv
+
+RuleException:
+CalledProcessError in line 90 of /home/chris/hrdetect-pipeline/Snakefile:
+Command ' set -euo pipefail;  Rscript scripts/signatures/get_mutation_catalog.R -v data/example/patients/patient12/sample1/somatic_snvs.vcf -c output/example/patients/patient12/sample1/snv_signatures/mutation_catalog.tsv --ref hg19 ' returned non-zero exit status 1.
+  File "/home/chris/hrdetect-pipeline/Snakefile", line 90, in __rule_mutation_catalogs
+  File "/mnt/data/bind_homes/chris/hrdetect-pipeline/dependencies/miniconda3/envs/dependencies/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Will exit after finishing currently running jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2021-03-06T175946.719792.snakemake.log
